@@ -1,186 +1,152 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="ru" class="js"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow">
-<title>RED2 — автосалон и сервис премиум-класса в Марбелье · демо</title>
-<meta name="description" content="Демо-концепт нового сайта RED2 (Марбелья). Не индексируется.">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="robots" content="noindex,nofollow"><title>RED2 — автосалон и техцентр в Марбелье</title><meta name="description" content="Премиальные автомобили и собственный техцентр в Сан-Педро-де-Алькантара. Демо.">
+<meta name="theme-color" content="#15120f"><link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
-<link rel="icon" href="img/favicon.png">
-</head>
-<body class="is-loading page-home">
-<div class="curtain" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-<header class="hdr" id="hdr">
-  <a class="hdr__logo" href="index.html" aria-label="RED2 — на главную"><img src="img/logo-red2.png" alt="RED2" width="129" height="22"></a>
-  <nav class="hdr__nav"><a href="autosalon.html">Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#racing">Racing</a><a href="index.html#contacts">Контакты</a></nav>
-  <div class="hdr__right">
-    <div class="lang" role="group" aria-label="Язык"><button class="is-on">RU</button><button data-l="EN">EN</button><button data-l="ES">ES</button></div>
-    <a class="btn btn--ghost btn--sm hdr__wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn btn--red btn--sm" href="servis.html#book">Записаться</a>
-    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
-  </div>
-</header>
-<div class="lang__tip" id="langTip">EN и ES появятся в рабочей версии</div>
-<nav class="mnav" id="mnav"><a class="big" href="autosalon.html">Автосалон<small>01</small></a><a class="big" href="servis.html">Сервис<small>02</small></a><a class="big" href="index.html#racing">Racing<small>03</small></a><a class="big" href="index.html#contacts">Контакты<small>04</small></a>
-  <div class="mnav__foot"><a class="mono" href="tel:+34681997777">Сервис · +34 681 99 77 77</a><a class="mono" href="tel:+34699589358">Автосалон · +34 699 589 358</a><span style="color:var(--steel)">RU · EN · ES</span></div>
-</nav>
-<main id="top">
-<section class="hero" id="hero">
-  <div class="hero__title">
-    <h1 class="h-xxl split" data-split>Продаём. Обслуживаем. <span class="red">Гоняем.</span></h1>
-    <p class="hero__sub rv">Автосалон и техцентр премиум-класса в Марбелье. Один бренд и одна территория: купили у нас, обслуживаетесь у нас.</p>
-  </div>
-  <div class="hero__panes">
-    <a class="pane" href="autosalon.html" data-pane>
-      <div class="pane__img" style="background-image:url(img/ph/urus-studio.webp)"></div>
-      <div class="pane__meta">
-        <div><div class="pane__k">01 · RED2 Auto Gallery</div><div class="pane__t">Автосалон</div><div class="pane__d">46 автомобилей в наличии: от городских до Lamborghini Urus. Гарантия 12 месяцев, трейд-ин, финансирование.</div></div>
-        <span class="pane__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
-    </a>
-    <a class="pane" href="servis.html" data-pane>
-      <div class="pane__img" style="background-image:url(img/ph/lift-812.webp)"></div>
-      <div class="pane__meta">
-        <div><div class="pane__k">02 · RED2 Auto Space</div><div class="pane__t">Сервис</div><div class="pane__d">ТО, электрика, PPF и детейлинг, развал, тюнинг. Диагностика на оборудовании марок, письменная смета до начала работ.</div></div>
-        <span class="pane__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
-    </a>
-  </div>
-  <div class="hero__scroll"><i></i>SCROLL</div>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Onest:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/r2.css?v=3">
+<script>try{var h=document.documentElement;if(matchMedia('(prefers-reduced-motion: reduce)').matches)h.classList.add('no-intro');else if(sessionStorage.r2pt)h.classList.add('pt-in');else if(sessionStorage.r2i)h.classList.add('no-intro')}catch(e){}</script>
+</head><body data-page="home"><div class="intro" aria-hidden="true"><div class="intro__tree"><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb g"></i><i class="bulb g"></i></div></div><div class="intro__cap">RED2 · LAUNCH CONTROL</div><div class="intro__rt">R/T 0.000</div></div>
+<div class="prog"></div>
+<header class="hdr"><a class="hdr__logo" href="index.html" aria-label="RED2 — на главную"><img class="lt" src="img/logo-red2.png" alt="RED2" width="117" height="20"><img class="ink" src="img/logo-ink.png" alt="" width="117" height="20"><span class="hdr__dist"><span>START</span></span></a>
+<nav class="hdr__nav"><a href="autosalon.html">Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#club">Club</a><a href="index.html#loc">Контакты</a></nav>
+<div class="hdr__r"><div class="lang"><a class="on" href="#">RU</a><a href="#" title="в полной версии">EN</a><a href="#" title="в полной версии">ES</a></div><a class="hdr__wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a><button class="burger" aria-label="Меню"><i></i><i></i></button></div></header>
+<div class="mnav"><nav><a class="big" href="index.html">Главная<small>START</small></a><a class="big" href="autosalon.html"><em>Авто</em>салон<small>46 АВТО</small></a><a class="big" href="servis.html">Сервис<small>ЗАПИСЬ</small></a><a class="big" href="index.html#club">Club<small>RACING</small></a></nav>
+<div class="mnav__foot"><div class="lang"><a class="on" href="#">RU</a><a href="#">EN</a><a href="#">ES</a></div><a href="tel:+34681997777">Сервис · +34 681 99 77 77</a><a href="tel:+34699589358">Автосалон · +34 699 589 358</a><a class="btn btn--red btn--wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp<b>↗</b></a></div></div>
+<main>
+<section class="hero" data-dist="START">
+ <div class="reel">
+  <div class="reel__p"><video src="media/hero-m4.mp4" poster="media/hero-m4.webp" muted playsinline loop autoplay preload="auto"></video><span class="reel__tag">FIG. 01 — BMW M4 · МАРБЕЛЬЯ</span></div>
+  <div class="reel__p"><video data-src="media/showroom.mp4" poster="media/showroom.webp" muted playsinline loop preload="none"></video><span class="reel__tag">FIG. 02 — ШОУРУМ 1800 М²</span></div>
+  <div class="reel__p"><video data-src="media/ppf.mp4" poster="media/ppf.webp" muted playsinline loop preload="none"></video><span class="reel__tag">FIG. 03 — PPF · ТЕХЦЕНТР</span></div>
+ </div>
+ <div class="tree" aria-hidden="true"><i class="bulb"></i><i class="bulb"></i><i class="bulb"></i><i class="bulb g"></i><span>STAGED</span></div>
+ <div class="hero__foot">
+ <div class="hero__in"><h1 class="disp hero__t" data-hero-title><span class="ln"><span>Быстрее</span></span><span class="ln"><span><em>всех</em> <span class="red">—</span></span></span><span class="ln"><span>в Марбелье.</span></span></h1>
+  <div class="hero__side" data-hero-side><p>Шоурум премиальных автомобилей и собственный техцентр в Сан-Педро-де-Алькантара. Команда двукратного чемпиона Испании по драг-рейсингу.</p><a class="btn btn--bone" href="#showroom">Смотреть машины<b>↓</b></a></div></div>
+ <div class="lanes" data-hero-lanes><a class="lane" href="autosalon.html"><span>Автосалон<small>46 машин в наличии</small></span><b>→</b></a><a class="lane" href="servis.html"><span>Сервис<small>Запись онлайн</small></span><b>→</b></a></div>
+ </div>
+</section>
+<div class="mq" data-mq><div class="mq__t"><span>Lamborghini</span><span>Porsche</span><span>Mercedes-AMG</span><span>Maybach</span><span>BMW M</span><span>Ferrari</span><span>Bentley</span><span>Audi Sport</span></div></div>
+
+<section class="sec wrap" data-dist="60 FT">
+ <div class="sh"><div class="sh__k"><span class="num">01 / 60 FT</span><span class="kicker"><i></i>Две полосы</span></div><h2 class="disp h-m sh__t" data-split>Один бренд, одна территория. <em>Купили</em> у нас — обслуживаетесь у нас.</h2></div>
+ <div class="duo">
+  <a class="duo__c" href="autosalon.html" data-clip><div class="media" data-par="8"><video data-src="media/showroom.mp4" poster="media/showroom.webp" muted playsinline loop preload="none" data-inview></video></div>
+   <div class="duo__n"><span>LANE 1</span><span>AUTO GALLERY</span></div>
+   <div class="duo__b"><h3><em>Авто</em>салон</h3><ul><li>46 авто в наличии</li><li>Гарантия 12 мес.</li><li>Финансирование</li><li>Трейд-ин</li><li>Подбор из Европы</li></ul><div class="duo__go">Шоурум · Calle Fragua 20<b>→</b></div></div></a>
+  <a class="duo__c" href="servis.html" data-clip><div class="media" data-par="8"><img src="img/ph/lift-812.webp" alt="Ferrari 812 на подъёмнике RED2" loading="lazy"></div>
+   <div class="duo__n"><span>LANE 2</span><span>AUTO SPACE</span></div>
+   <div class="duo__b"><h3>Сервис</h3><ul><li>ТО и механика</li><li>PPF и детейлинг</li><li>Развал 3D · 90 €</li><li>Электрика</li><li>Тюнинг</li></ul><div class="duo__go">Техцентр · C. Platino 1<b>→</b></div></div></a>
+ </div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div class="ticker__row" data-ticker>
-  <span>ODIS · PIWIS · ISTA</span><span>PPF и керамика</span><span>Stage 1–3</span><span>Развал 3D</span><span>Кузов и покраска</span><span>Гибриды и EV</span><span>ITV под ключ</span><span>Drag & Track</span>
-  <span>ODIS · PIWIS · ISTA</span><span>PPF и керамика</span><span>Stage 1–3</span><span>Развал 3D</span><span>Кузов и покраска</span><span>Гибриды и EV</span><span>ITV под ключ</span><span>Drag & Track</span>
-</div></div>
-
-<section class="terr" id="about">
-  <div class="wrap">
-    <div class="terr__top">
-      <div>
-        <div class="eyebrow rv"><b>01</b>Территория RED2</div>
-        <h2 class="h-xl split" data-split style="margin-top:18px">Тысячи метров. Одна точка входа.</h2>
-      </div>
-      <p class="lead rv">В Марбелье сервис, детейлинг, покраска и продажа обычно разбросаны по разным мастерским. У нас всё это под одной крышей в Сан-Педро: машина заезжает один раз, а дальше ей занимается одна команда.</p>
-    </div>
-  </div>
-  <figure class="terr__img" data-clip><img src="img/ph/building.webp" alt="Здание RED2 в Марбелье" loading="lazy" data-par="12"><figcaption>RED2 · Сан-Педро-де-Алькантара</figcaption></figure>
-  <div class="wrap">
-    <div class="facts">
-      <div class="fact"><div class="fact__n"><span data-odo="1800">1800</span><small>м²</small></div><div class="fact__l">автосалон</div></div>
-      <div class="fact"><div class="fact__n"><span data-odo="1160">1160</span><small>м²</small></div><div class="fact__l">техцентр</div></div>
-      <div class="fact"><div class="fact__n"><small>+</small><span data-odo="500">500</span><small>м²</small></div><div class="fact__l">второй цех рядом</div></div>
-      <div class="fact"><div class="fact__n"><span data-odo="8">8</span></div><div class="fact__l">подъёмников</div></div>
-      <div class="fact"><div class="fact__n"><span data-odo="2">2</span><small>×</small></div><div class="fact__l">чемпионы Испании по драг-рейсингу</div></div>
-      <div class="fact"><div class="fact__n"><span data-odo="3">3</span></div><div class="fact__l">языка: русский, английский, испанский</div></div>
-    </div>
-    <p class="note">Цифры из звонка 20.10, перед запуском сверим с клиентом.</p>
-  </div>
+<section class="sec rail-sec" id="showroom" data-dist="330 FT" style="padding-top:0">
+ <div class="sh wrap"><div class="sh__k"><span class="num">02 / 330 FT</span><span class="kicker"><i></i>Шоурум</span></div><h2 class="disp h-m sh__t" data-split>Сейчас <em>в зале</em></h2><div class="sh__a"><a class="btn btn--ghost" href="autosalon.html">Все 46<b>→</b></a></div></div>
+ <div class="rail-pin"><div class="rail" data-rail><article class="car " data-id="2" data-brand="Lamborghini" data-price="350000" data-year="2025" data-km="12500" data-cv="800" tabindex="0" role="button" aria-label="Lamborghini Urus SE: подробнее">
+<div class="car__m"><img src="img/cars/c2_0.webp" alt="Lamborghini Urus SE — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c2_1.webp" alt="Lamborghini Urus SE — фото 2" loading="lazy" decoding="async"><img src="img/cars/c2_2.webp" alt="Lamborghini Urus SE — фото 3" loading="lazy" decoding="async"><img src="img/cars/c2_3.webp" alt="Lamborghini Urus SE — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2025 · 800 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Lamborghini</small>Urus SE</h3><span class="car__p">350 000 €</span></div>
+<div class="car__s"><span>12 500 км</span><span>Плагин-гибрид</span><span>Внедорожник</span></div></article><article class="car " data-id="15" data-brand="Mercedes" data-price="210000" data-year="2024" data-km="10853" data-cv="612" tabindex="0" role="button" aria-label="Mercedes-Maybach S 680: подробнее">
+<div class="car__m"><img src="img/cars/c15_0.webp" alt="Mercedes-Maybach S 680 — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c15_1.webp" alt="Mercedes-Maybach S 680 — фото 2" loading="lazy" decoding="async"><img src="img/cars/c15_2.webp" alt="Mercedes-Maybach S 680 — фото 3" loading="lazy" decoding="async"><img src="img/cars/c15_3.webp" alt="Mercedes-Maybach S 680 — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 612 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-Maybach</small>S 680</h3><span class="car__p">210 000 €</span></div>
+<div class="car__s"><span>10 853 км</span><span>Бензин</span><span>Седан</span></div></article><article class="car " data-id="6" data-brand="Porsche" data-price="148000" data-year="2023" data-km="37700" data-cv="385" tabindex="0" role="button" aria-label="Porsche 911 Targa 4: подробнее">
+<div class="car__m"><img src="img/cars/c6_0.webp" alt="Porsche 911 Targa 4 — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c6_1.webp" alt="Porsche 911 Targa 4 — фото 2" loading="lazy" decoding="async"><img src="img/cars/c6_2.webp" alt="Porsche 911 Targa 4 — фото 3" loading="lazy" decoding="async"><img src="img/cars/c6_3.webp" alt="Porsche 911 Targa 4 — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2023 · 385 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Porsche</small>911 Targa 4</h3><span class="car__p">148 000 €</span></div>
+<div class="car__s"><span>37 700 км</span><span>Бензин</span><span>Кабриолет</span></div></article><article class="car " data-id="18" data-brand="Mercedes" data-price="147000" data-year="2022" data-km="31580" data-cv="585" tabindex="0" role="button" aria-label="Mercedes-AMG SL 63: подробнее">
+<div class="car__m"><img src="img/cars/c18_0.webp" alt="Mercedes-AMG SL 63 — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c18_1.webp" alt="Mercedes-AMG SL 63 — фото 2" loading="lazy" decoding="async"><img src="img/cars/c18_2.webp" alt="Mercedes-AMG SL 63 — фото 3" loading="lazy" decoding="async"><img src="img/cars/c18_3.webp" alt="Mercedes-AMG SL 63 — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2022 · 585 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-AMG</small>SL 63</h3><span class="car__p">147 000 €</span></div>
+<div class="car__s"><span>31 580 км</span><span>Бензин</span><span>Родстер</span></div></article><article class="car " data-id="3" data-brand="Mercedes" data-price="145000" data-year="2024" data-km="9009" data-cv="367" tabindex="0" role="button" aria-label="Mercedes-Benz GLS 450 d: подробнее">
+<div class="car__m"><img src="img/cars/c3_0.webp" alt="Mercedes-Benz GLS 450 d — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c3_1.webp" alt="Mercedes-Benz GLS 450 d — фото 2" loading="lazy" decoding="async"><img src="img/cars/c3_2.webp" alt="Mercedes-Benz GLS 450 d — фото 3" loading="lazy" decoding="async"><img src="img/cars/c3_3.webp" alt="Mercedes-Benz GLS 450 d — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 367 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-Benz</small>GLS 450 d</h3><span class="car__p">145 000 €</span></div>
+<div class="car__s"><span>9 009 км</span><span>Гибрид</span><span>Внедорожник</span></div></article><article class="car " data-id="16" data-brand="Mercedes" data-price="137000" data-year="2024" data-km="33844" data-cv="612" tabindex="0" role="button" aria-label="Mercedes-AMG GLE 63 S Coupé: подробнее">
+<div class="car__m"><img src="img/cars/c16_0.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c16_1.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 2" loading="lazy" decoding="async"><img src="img/cars/c16_2.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 3" loading="lazy" decoding="async"><img src="img/cars/c16_3.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 612 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-AMG</small>GLE 63 S Coupé</h3><span class="car__p">137 000 €</span></div>
+<div class="car__s"><span>33 844 км</span><span>Бензин</span><span>Внедорожник</span></div></article><article class="car " data-id="7" data-brand="BMW" data-price="91500" data-year="2024" data-km="9009" data-cv="510" tabindex="0" role="button" aria-label="BMW M4 Competition: подробнее">
+<div class="car__m"><img src="img/cars/c7_0.webp" alt="BMW M4 Competition — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c7_1.webp" alt="BMW M4 Competition — фото 2" loading="lazy" decoding="async"><img src="img/cars/c7_2.webp" alt="BMW M4 Competition — фото 3" loading="lazy" decoding="async"><img src="img/cars/c7_3.webp" alt="BMW M4 Competition — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 510 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>BMW</small>M4 Competition</h3><span class="car__p">91 500 €</span></div>
+<div class="car__s"><span>9 009 км</span><span>Бензин</span><span>Купе</span></div></article><article class="car " data-id="4" data-brand="BMW" data-price="87500" data-year="2022" data-km="83000" data-cv="625" tabindex="0" role="button" aria-label="BMW M8 Competition: подробнее">
+<div class="car__m"><img src="img/cars/c4_0.webp" alt="BMW M8 Competition — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c4_1.webp" alt="BMW M8 Competition — фото 2" loading="lazy" decoding="async"><img src="img/cars/c4_2.webp" alt="BMW M8 Competition — фото 3" loading="lazy" decoding="async"><img src="img/cars/c4_3.webp" alt="BMW M8 Competition — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2022 · 625 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>BMW</small>M8 Competition</h3><span class="car__p">87 500 €</span></div>
+<div class="car__s"><span>83 000 км</span><span>Бензин</span><span>Седан</span></div></article><a class="rail__end" href="autosalon.html"><span class="kicker" style="color:#fff">Ещё 38 в наличии</span><span class="disp">Весь<br><em style="color:#fff">шоурум</em> →</span></a></div>
+ <div class="railhint"><span>← ЛИСТАЙТЕ →</span><span class="js-rc">01 / 09</span></div><div class="railbar"><i></i></div></div>
 </section>
 
-<section class="dirs" id="dirs">
-  <div class="dirs__head">
-    <div>
-      <div class="eyebrow rv"><b>02</b>Сервис RED2 Auto Space</div>
-      <h2 class="h-xl split" data-split style="margin-top:18px">Всё, что нужно машине</h2>
-    </div>
-    <a class="btn btn--ghost rv" href="servis.html">Все услуги <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<section class="champ" data-dist="660 FT" data-champ>
+ <div class="champ__pin">
+  <div class="champ__img"><img src="img/ph/drag-event.webp" alt="RED2 на драг-рейсинге" loading="lazy" data-champ-img></div>
+  <div class="champ__b">
+   <span class="kicker" style="color:var(--smoke)"><i></i>03 / 660 FT · Владелец</span>
+   <div class="champ__row"><div class="champ__big" aria-label="Двукратный"><span data-count="2" data-from="0">2</span>×</div><div class="champ__ttl">Чемпион<br>Испании<small>драг-рейсинг</small></div></div>
+   <p class="lead" data-fade>Виталий Бойко — двукратный чемпион Испании по драг-рейсингу. Машины клиентов готовят те же люди, которые сами выходят на старт.</p>
+   <div class="slip" data-slip><div class="slip__h"><span>RED2 · TIME SLIP</span><span>LANE 2</span></div>
+    <div class="slip__r"><span>Автосалон</span><b><span data-count="1800">0</span> м²</b></div>
+    <div class="slip__r"><span>Техцентр</span><b><span data-count="1160">0</span> + <span data-count="500">0</span> м²</b></div>
+    <div class="slip__r"><span>Подъёмников</span><b><span data-count="8">0</span></b></div>
+    <div class="slip__r"><span>Авто в наличии</span><b><span data-count="46">0</span></b></div>
+    <div class="slip__r"><span>Языки</span><b>RU · EN · ES</b></div>
+    <div class="slip__f">«Один бренд. Всё под одним брендом.»<br><small style="font:500 10px/1 var(--wide);letter-spacing:.12em;text-transform:uppercase;color:#8a8075">— Виталий Бойко</small></div></div>
   </div>
-  <div class="dirs__track" data-hscroll>
-    <article class="dir"><div class="dir__img"><img src="img/ph/812-rear-detail.webp" alt="" loading="lazy"></div><span class="dir__no">01</span><span class="dir__tag">Приоритет</span>
-      <div class="dir__body"><h3 class="dir__t">Плёнка PPF и детейлинг</h3><p class="dir__d">Солнце, солёный воздух и дожди быстро съедают заводской лак. Полная или частичная оклейка, керамика, полировка, химчистка.</p><ul class="dir__list"><li>PPF целиком</li><li>Перед и пороги</li><li>Керамика</li><li>Антихром</li></ul></div></article>
-    <article class="dir"><div class="dir__img"><img src="img/ph/workshop-s.webp" alt="" loading="lazy"></div><span class="dir__no">02</span>
-      <div class="dir__body"><h3 class="dir__t">ТО и механика</h3><p class="dir__d">Регламент по нормам производителя, масла AT/DSG/PDK, ГРМ, подвеска, тормоза включая карбон-керамику.</p><ul class="dir__list"><li>ТО по регламенту</li><li>Коробки DSG/PDK/ZF</li><li>Пневмоподвеска</li></ul></div></article>
-    <article class="dir"><div class="dir__img"><img src="img/ph/r8-lift-s.webp" alt="" loading="lazy"></div><span class="dir__no">03</span><span class="dir__tag">от 90 €</span>
-      <div class="dir__body"><h3 class="dir__t">Развал и шиномонтаж</h3><p class="dir__d">3D-развал за 40–90 минут, высокоскоростная балансировка, хранение шин. Без записи за две недели.</p><ul class="dir__list"><li>Развал 3D</li><li>Балансировка</li><li>Хранение</li></ul></div></article>
-    <article class="dir"><div class="dir__img"><img src="img/ph/interior.webp" alt="" loading="lazy"></div><span class="dir__no">04</span>
-      <div class="dir__body"><h3 class="dir__t">Электрика и кодирование</h3><p class="dir__d">Диагностика ODIS, PIWIS, ISTA, CAN-шины, перепрошивка ЭБУ, сигнализации и трекеры, калибровка ADAS.</p><ul class="dir__list"><li>Диагностика OEM</li><li>Кодирование</li><li>Трекеры</li></ul></div></article>
-    <article class="dir"><div class="dir__img"><img src="img/ph/812-graffiti.webp" alt="" loading="lazy"></div><span class="dir__no">05</span>
-      <div class="dir__body"><h3 class="dir__t">Кузов и покраска</h3><p class="dir__d">Своя покрасочная камера: глянец, мат, сатин. Алюминий и карбон, восстановление после ДТП, работа со страховыми.</p><ul class="dir__list"><li>Камера</li><li>Smart repair</li><li>Экспертиза</li></ul></div></article>
-    <article class="dir"><div class="dir__img"><img src="img/ph/gt2rs-track.webp" alt="" loading="lazy"></div><span class="dir__no">06</span>
-      <div class="dir__body"><h3 class="dir__t">Тюнинг и Racing</h3><p class="dir__d">Stage 1–3, выхлоп Akrapovič и Capristo, подготовка к треку и драгу от команды, которая выигрывает сама.</p><ul class="dir__list"><li>Stage 1–3</li><li>Выхлоп</li><li>Track / Drag</li></ul></div></article>
-    <a class="dir dir--end" href="servis.html#book"><span class="eyebrow" style="color:#fff">Запись онлайн</span><div><div class="h-l">Запишитесь сегодня, приезжайте завтра</div><p style="margin:14px 0 0;max-width:32ch">Запись в течение 24 часов по телефону или в WhatsApp.</p></div><span class="pane__go" style="border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-  </div>
+ </div>
 </section>
 
-<section class="stock" id="stock">
-  <div class="wrap stock__head">
-    <div>
-      <div class="eyebrow rv"><b>03</b>RED2 Auto Gallery · в наличии</div>
-      <h2 class="h-xl split" data-split style="margin-top:18px">Автосалон</h2>
-    </div>
-    <div class="rail__ctrl rv"><button class="rbtn" data-rail="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button class="rbtn" data-rail="1" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><a class="btn btn--dark" href="autosalon.html">Весь сток · 46 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  </div>
-  <div class="rail" id="rail"></div>
-  <div class="rail__bar"><i id="railBar"></i></div>
+<section class="sec wrap" data-dist="1000 FT">
+ <div class="sh"><div class="sh__k"><span class="num">04 / 1000 FT</span><span class="kicker"><i></i>Почему RED2</span></div><h2 class="disp h-m sh__t" data-split>Спокойствие <em>на скорости</em></h2></div>
+ <div class="trust">
+  <div class="tr" data-fade><span class="num">01</span><h4>Проверено своим сервисом</h4><p>Каждая машина на продажу проходит диагностику в нашем техцентре. <span class="flag flag--ink">подтвердить</span></p></div>
+  <div class="tr" data-fade><span class="num">02</span><h4>Гарантия 12 месяцев</h4><p>На автомобили из шоурума — по условиям RED2 Auto Gallery.</p></div>
+  <div class="tr" data-fade><span class="num">03</span><h4>Подбор и доставка из Европы</h4><p>Найдём и привезём машину из Германии и ЕС под ключ. <span class="flag flag--ink">условия подтвердить</span></p></div>
+  <div class="tr" data-fade><span class="num">04</span><h4>Финансирование и трейд-ин</h4><p>Кредит, выкуп и зачёт вашего автомобиля — в одном месте.</p></div>
+ </div>
+ <div class="proof">
+  <div data-fade><span class="num"><span data-count="4.8" data-dec="1">0</span><em>★</em></span><span>Google · RED2 Auto Space <span class="flag flag--ink">проверить</span></span></div>
+  <div data-fade><span class="num"><span data-count="222">0</span></span><span>отзыва Google · Auto Gallery</span></div>
+  <div data-fade><span class="num"><span data-count="3460">0</span></span><span>м² территории</span></div>
+  <div data-fade><span class="num"><span data-count="24">0</span><em>ч</em></span><span>запись в сервис</span></div>
+ </div>
 </section>
 
-<section class="one" id="one">
-  <div class="wrap one__grid">
-    <div class="one__media" data-clip><img src="img/ph/ferrari-bay.webp" alt="Ferrari в цеху RED2" loading="lazy" data-par="10"></div>
-    <div>
-      <div class="eyebrow rv"><b>04</b>Как у официального дилера</div>
-      <p class="one__quote split" data-split>Купили у нас — <em>обслуживаетесь</em> у нас. Без записи на две недели вперёд.</p>
-      <p class="lead rv">Свой сервис за стенкой салона: каждую машину на продажу проверяет наша команда, а после покупки ведёт её историю обслуживания.</p>
-      <div class="steps">
-        <div class="step rv"><div class="step__n">01</div><div><div class="step__t">Диагностика OEM</div><div class="step__d">ODIS, PIWIS, ISTA: ищем причину, а не гасим симптомы.</div></div></div>
-        <div class="step rv"><div class="step__n">02</div><div><div class="step__t">Смета письменно</div><div class="step__d">Фиксированная цена до начала работ, без сюрпризов на выдаче.</div></div></div>
-        <div class="step rv"><div class="step__n">03</div><div><div class="step__t">Фото- и видеоотчёт</div><div class="step__d">Онлайн-отчёт о каждом этапе работ: что сделали и что заменили.</div></div></div>
-        <div class="step rv"><div class="step__n">04</div><div><div class="step__t">Подменный автомобиль</div><div class="step__d">Эвакуатор, охраняемая парковка, хранение машин.</div></div></div>
-      </div>
-      <p class="note">«Проверку каждой машины на продажу в своём сервисе» подтвердим у клиента.</p>
-    </div>
-  </div>
+<section class="sec dark" data-dist="1/8 MILE">
+ <div class="wrap"><div class="sh"><div class="sh__k"><span class="num">05 / 1/8 MILE</span><span class="kicker"><i></i>Техцентр</span></div><h2 class="disp h-m sh__t" data-split>Боксы <em>RED2</em></h2><div class="sh__a"><a class="btn btn--red" href="servis.html">Все услуги<b>→</b></a></div></div>
+ <div class="idx" data-idx>
+  <a class="idx__r" href="servis.html#ppf" data-img="media/ppf.webp"><span class="num">01</span><h4>PPF и детейлинг</h4><div class="thumb" data-clip><img src="media/ppf.webp" alt="" loading="lazy"></div><p>Приоритет: солнце и солёный воздух Коста-дель-Соль съедают лак.</p><span class="ar">→</span></a>
+  <a class="idx__r" href="servis.html#to" data-img="img/ph/ferrari-bay-m.webp"><span class="num">02</span><h4>ТО и механика</h4><div class="thumb" data-clip><img src="img/ph/ferrari-bay-m.webp" alt="" loading="lazy"></div><p>Регламент производителя, OEM-диагностика ODIS · PIWIS · ISTA.</p><span class="ar">→</span></a>
+  <a class="idx__r" href="servis.html#align" data-img="img/ph/r8-lift-s.webp"><span class="num">03</span><h4>Развал 3D · 90 €</h4><div class="thumb" data-clip><img src="img/ph/r8-lift-s.webp" alt="" loading="lazy"></div><p>40–90 минут, без очереди. Цена с IVA.</p><span class="ar">→</span></a>
+  <a class="idx__r" href="servis.html#el" data-img="img/ph/taillight.webp"><span class="num">04</span><h4>Автоэлектрика</h4><div class="thumb" data-clip><img src="img/ph/taillight.webp" alt="" loading="lazy"></div><p>Электрик, к которому другие сервисы отправляют своих клиентов.</p><span class="ar">→</span></a>
+  <a class="idx__r" href="servis.html#tune" data-img="img/ph/812-rear-detail.webp"><span class="num">05</span><h4>Тюнинг и выхлоп</h4><div class="thumb" data-clip><img src="img/ph/812-rear-detail.webp" alt="" loading="lazy"></div><p>Stage 1–3, выхлоп на заказ, представители TTS.</p><span class="ar">→</span></a>
+ </div></div>
+ <div class="float" aria-hidden="true"><img alt=""></div>
+</section>
+<div class="mq mq--dark" data-mq data-dir="-1"><div class="mq__t"><span>Драг-рейсинг</span><span>Трек-дни</span><span>Диностенд</span><span>Хранение суперкаров</span><span>Club RED2</span></div></div>
+
+<section class="sec wrap" id="club" data-dist="1/4 MILE">
+ <div class="sh"><div class="sh__k"><span class="num">06 / 1/4 MILE</span><span class="kicker"><i></i>Racing &amp; Club</span></div><h2 class="disp h-m sh__t" data-split>Больше, чем <em>сервис</em>. Клуб людей, которые любят скорость.</h2></div>
+ <div class="club">
+  <div class="club__c club__c--a" data-clip><img src="img/ph/gt2rs-track.webp" alt="Porsche GT2 RS на треке" loading="lazy" data-par="10"><span class="kicker"><i></i>Трек-дни</span><h4>Альмерия, с маршалами и кейтерингом</h4><p>Закрытые выезды на трек для клиентов RED2.</p></div>
+  <div class="club__c club__c--b" data-clip><img src="img/ph/812-graffiti.webp" alt="Ferrari 812 у стены RED2" loading="lazy" data-par="10"><span class="kicker"><i></i>Драг · RED2 Racing</span><h4>Подготовка к старту</h4><p>Подвеска, резина, прошивка, сцепление — то, что мы делаем для своих машин.</p></div>
+  <div class="club__list"><div data-fade><b>Диностенд</b><span>Замер мощности до и после <span class="flag flag--ink">скоро</span></span></div><div data-fade><b>Хранение</b><span>Закрытая охраняемая парковка</span></div><div data-fade><b>События</b><span>Встречи клуба в шоуруме</span></div><div data-fade><b>Падел-турнир</b><span>Под брендом RED2</span></div></div>
+ </div>
 </section>
 
-<section class="race" id="racing">
-  <div class="race__bg"><img src="img/ph/drag-event.webp" alt="Porsche RED2 на драг-рейсинге" loading="lazy"></div>
-  <div class="race__word" data-race>RED2 Racing · RED2 Racing ·</div>
-  <div class="race__in">
-    <div>
-      <div class="eyebrow" style="color:var(--mist)"><b>05</b>RED2 Racing & Club</div>
-      <h2 class="h-xl split" data-split style="margin-top:18px">Двукратные чемпионы Испании по драгу</h2>
-      <p class="lead rv" style="margin-top:18px">Машины клиентов готовят люди, которые сами выходят на старт. Тот же подход к любой машине, даже если она никогда не увидит трек.</p>
-    </div>
-    <div class="race__list rv">
-      <div><b>Подготовка к треку и драгу</b><span>подвеска, тормоза, охлаждение</span></div>
-      <div><b>Диностенд<span class="chip-soon">СКОРО</span></b><span>замер мощности рядом с Марбельей</span></div>
-      <div><b>Трек-дни</b><span>выезды на трек в Альмерии</span></div>
-      <div><b>Клуб RED2</b><span>поездки на суперкарах, кино в салоне, падел-турнир</span></div>
-    </div>
-  </div>
+<section class="sec wrap" id="loc" data-dist="TRAP" style="padding-top:0">
+ <div class="loc">
+  <div class="loc__coord" data-split>36°29′ N<br><em>4°59′ W</em></div>
+  <div class="loc__c" data-fade><h5>Автосалон · Auto Gallery</h5><p>Calle Fragua 20, угол C. Granito<br>Сан-Педро-де-Алькантара, Марбелья</p><a href="tel:+34699589358">+34 699 589 358</a><a href="https://wa.me/34699589358" target="_blank" rel="noopener">WhatsApp салона</a></div>
+  <div class="loc__c" data-fade><h5>Сервис · Auto Space</h5><p>C. Platino 1, 29603<br>Пн–Пт 9–19 · Сб 10–14</p><a href="tel:+34681997777">+34 681 99 77 77</a><a href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp сервиса</a></div>
+ </div>
+ <div class="loc__img" data-clip><img src="img/ph/building.webp" alt="Здание RED2 в Сан-Педро" loading="lazy" data-par="12"></div>
 </section>
-
-<section class="cta" id="contacts">
-  <div class="wrap">
-    <div class="eyebrow rv"><b>06</b>Контакты</div>
-    <h2 class="h-xl split" data-split style="margin-top:18px">Приезжайте. <span class="red">Мы рядом.</span></h2>
-    <div class="cta__grid">
-      <div class="loc rv"><div class="loc__k">Говорим на вашем языке</div><div class="loc__t">Русский · English · Español</div><p>Пишите в WhatsApp на любом из трёх языков, ответит живой менеджер.</p><div class="loc__btns"><a class="btn btn--red" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp</a></div></div>
-      <div class="loc rv"><div class="loc__k">Сервис · Auto Space</div><div class="loc__t">Calle Platino, 1</div><p>29603 Марбелья, полигон Сан-Педро</p><p>Пн–Пт 9:00–19:00 · Сб 10:00–14:00</p><a class="tel" href="tel:+34681997777">+34 681 99 77 77</a></div>
-      <div class="loc rv"><div class="loc__k">Автосалон · Auto Gallery</div><div class="loc__t">Calle Fragua, 20</div><p>угол c Calle Granito, 29603 Марбелья</p><p>Пн–Пт 9:00–19:00 · Сб 10:00–14:00</p><a class="tel" href="tel:+34699589358">+34 699 589 358</a></div>
-    </div>
-  </div>
-</section>
+<div class="sheet" aria-hidden="true"><div class="sheet__bg"></div><div class="sheet__p" role="dialog" aria-modal="true" aria-label="Карточка автомобиля"><button class="sheet__x" aria-label="Закрыть">×</button>
+<div class="sheet__g"><div class="sheet__track"></div><div class="sheet__dots"></div><div class="sheet__nav"><button data-d="-1" aria-label="Назад">←</button><button data-d="1" aria-label="Вперёд">→</button></div></div>
+<div class="sheet__i"><h3><small></small><span class="t"></span></h3><div class="sheet__price"></div><div class="specs"></div>
+<p class="note">Каждый автомобиль перед продажей проходит проверку в собственном техцентре RED2 <span class="flag flag--ink">подтвердить</span></p>
+<div class="sheet__cta"><a class="btn btn--red btn--wa js-wa" target="_blank" rel="noopener" href="#">Спросить в WhatsApp<b>↗</b></a><a class="btn btn--ghost js-src" target="_blank" rel="noopener" href="#">Объявление на red2.es<b>↗</b></a><p class="note">Финансирование, трейд-ин и гарантия 12 месяцев — по условиям RED2 Auto Gallery.</p></div></div></div></div>
 </main>
-
-<footer class="ftr">
-  <div class="ftr__top">
-    <div>RED2 Auto Space · RED2 Auto Gallery<br>Марбелья, Сан-Педро-де-Алькантара</div>
-    <nav><a href="autosalon.html">Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#racing">Racing</a><a href="https://www.instagram.com/redauto.space2.spain/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a></nav>
-  </div>
-  <div class="ftr__word" aria-hidden="true"><span>R</span><span>E</span><span>D</span><span>2</span></div>
-  <div class="ftr__bot"><span>Демо-концепт NetWorX · не индексируется · 2026</span><span>Фото: red2.es, taller.red2.es</span></div>
-</footer>
-<a class="fab" id="fab" href="https://wa.me/34681997777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 4.9c2.1.9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
-<script src="js/cars.js?v=1"></script>
+<footer class="ft" data-dist="FINISH"><div class="ft__cta"><h2 class="disp h-l" data-split>Финиш здесь.<br><em>Старт</em> — за вами.</h2><a class="btn btn--red btn--wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp<b>↗</b></a></div>
+<div class="ft__grid"><div><h6>Автосалон</h6><p>RED2 Auto Gallery</p><p>Calle Fragua 20, угол C. Granito</p><a href="tel:+34699589358">+34 699 589 358</a></div><div><h6>Сервис</h6><p>RED2 Auto Space</p><p>C. Platino 1, 29603</p><a href="tel:+34681997777">+34 681 99 77 77</a></div><div><h6>Часы</h6><p>Пн–Пт 9:00–19:00</p><p>Сб 10:00–14:00</p></div><div><h6>Соцсети</h6><a href="https://www.instagram.com/redauto.space2.spain/" target="_blank" rel="noopener">Instagram · Сервис</a><a href="https://www.instagram.com/red2.autogallery/" target="_blank" rel="noopener">Instagram · Gallery</a><a href="https://www.tiktok.com/@red27336" target="_blank" rel="noopener">TikTok</a></div></div>
+<div class="ft__mega" aria-hidden="true">RED<span>2</span></div>
+<div class="ft__legal"><span>© 2026 RED2 · Сан-Педро-де-Алькантара, Марбелья</span><span>Демо-версия NetWorX · не индексируется</span></div></footer>
+<div class="dock"><a class="wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a><a class="pr" href="autosalon.html">Подобрать авто</a></div>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="js/site.js?v=2"></script>
-</body>
-</html>
+<script src="js/cars.js?v=3"></script><script src="js/r2.js?v=3"></script></body></html>

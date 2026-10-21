@@ -1,94 +1,87 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="ru" class="js"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow">
-<title>Автосалон RED2 Auto Gallery · Марбелья · демо</title>
-<meta name="description" content="Демо-концепт нового сайта RED2 (Марбелья). Не индексируется.">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="robots" content="noindex,nofollow"><title>Автосалон RED2 — премиальные авто в Марбелье</title><meta name="description" content="46 автомобилей в наличии, гарантия 12 месяцев, финансирование, трейд-ин. Демо.">
+<meta name="theme-color" content="#15120f"><link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
-<link rel="icon" href="img/favicon.png">
-</head>
-<body class="is-loading page-auto">
-<div class="curtain" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-<header class="hdr" id="hdr">
-  <a class="hdr__logo" href="index.html" aria-label="RED2 — на главную"><img src="img/logo-red2.png" alt="RED2" width="129" height="22"></a>
-  <nav class="hdr__nav"><a href="autosalon.html" class="is-on">Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#racing">Racing</a><a href="index.html#contacts">Контакты</a></nav>
-  <div class="hdr__right">
-    <div class="lang" role="group" aria-label="Язык"><button class="is-on">RU</button><button data-l="EN">EN</button><button data-l="ES">ES</button></div>
-    <a class="btn btn--ghost btn--sm hdr__wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn btn--red btn--sm" href="servis.html#book">Записаться</a>
-    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
-  </div>
-</header>
-<div class="lang__tip" id="langTip">EN и ES появятся в рабочей версии</div>
-<nav class="mnav" id="mnav"><a class="big" href="autosalon.html">Автосалон<small>01</small></a><a class="big" href="servis.html">Сервис<small>02</small></a><a class="big" href="index.html#racing">Racing<small>03</small></a><a class="big" href="index.html#contacts">Контакты<small>04</small></a>
-  <div class="mnav__foot"><a class="mono" href="tel:+34681997777">Сервис · +34 681 99 77 77</a><a class="mono" href="tel:+34699589358">Автосалон · +34 699 589 358</a><span style="color:var(--steel)">RU · EN · ES</span></div>
-</nav>
-<main id="top">
-<section class="phero">
-  <div class="phero__bg"><img src="img/cars/c2_0_l.webp" alt="Lamborghini Urus SE в салоне RED2" data-hero-img></div>
-  <div class="wrap phero__in">
-    <div>
-      <div class="crumbs"><a href="index.html">RED2</a> / Автосалон</div>
-      <h1 class="h-xxl split" data-split>Авто&shy;салон</h1>
-      <p class="lead rv" style="margin-top:16px">Подобранные автомобили среднего и премиум-класса в Марбелье. Каждый с гарантией 12 месяцев, с возможностью трейд-ина и финансирования.</p>
-    </div>
-    <div class="phero__stats rv"><div><b>46</b>авто в наличии</div><div><b>12</b>мес. гарантии</div><div><b>3</b>языка</div></div>
-  </div>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Onest:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/r2.css?v=3">
+<script>try{var h=document.documentElement;if(matchMedia('(prefers-reduced-motion: reduce)').matches)h.classList.add('no-intro');else if(sessionStorage.r2pt)h.classList.add('pt-in');else if(sessionStorage.r2i)h.classList.add('no-intro')}catch(e){}</script>
+</head><body data-page="auto"><div class="intro" aria-hidden="true"><div class="intro__tree"><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb g"></i><i class="bulb g"></i></div></div><div class="intro__cap">RED2 · LAUNCH CONTROL</div><div class="intro__rt">R/T 0.000</div></div>
+<div class="prog"></div>
+<header class="hdr"><a class="hdr__logo" href="index.html" aria-label="RED2 — на главную"><img class="lt" src="img/logo-red2.png" alt="RED2" width="117" height="20"><img class="ink" src="img/logo-ink.png" alt="" width="117" height="20"><span class="hdr__dist"><span>START</span></span></a>
+<nav class="hdr__nav"><a href="autosalon.html" aria-current=page>Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#club">Club</a><a href="index.html#loc">Контакты</a></nav>
+<div class="hdr__r"><div class="lang"><a class="on" href="#">RU</a><a href="#" title="в полной версии">EN</a><a href="#" title="в полной версии">ES</a></div><a class="hdr__wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a><button class="burger" aria-label="Меню"><i></i><i></i></button></div></header>
+<div class="mnav"><nav><a class="big" href="index.html">Главная<small>START</small></a><a class="big" href="autosalon.html"><em>Авто</em>салон<small>46 АВТО</small></a><a class="big" href="servis.html">Сервис<small>ЗАПИСЬ</small></a><a class="big" href="index.html#club">Club<small>RACING</small></a></nav>
+<div class="mnav__foot"><div class="lang"><a class="on" href="#">RU</a><a href="#">EN</a><a href="#">ES</a></div><a href="tel:+34681997777">Сервис · +34 681 99 77 77</a><a href="tel:+34699589358">Автосалон · +34 699 589 358</a><a class="btn btn--red btn--wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp<b>↗</b></a></div></div>
+<main>
+<section class="ph" data-dist="START">
+ <div class="ph__b"><div><span class="kicker" style="opacity:.8"><i></i>RED2 Auto Gallery · Шоурум</span></div>
+  <h1 class="disp h-xl" data-hero-title><span class="ln"><span><em>1800</em> м²</span></span><span class="ln"><span>машин,</span></span><span class="ln"><span>которые</span></span><span class="ln"><span>заводят.</span></span></h1>
+  <div class="ph__meta" data-hero-side><div><span class="num"><span data-count="46">0</span></span><span>в наличии</span></div><div><span class="num"><span data-count="12">0</span> мес</span><span>гарантия</span></div><div><span class="num">ЕС</span><span>подбор под заказ</span></div></div></div>
+ <div class="ph__v" data-clip><video src="media/showroom.mp4" poster="media/showroom.webp" muted playsinline loop autoplay preload="auto"></video></div>
 </section>
+<div class="bar" data-dist="330 FT"><div class="bar__in"><div class="chips"><button class="chip on" data-f="*">Все<sup>12</sup></button><button class="chip" data-f="Mercedes">Mercedes<sup>6</sup></button><button class="chip" data-f="BMW">BMW<sup>3</sup></button><button class="chip" data-f="Porsche">Porsche<sup>2</sup></button><button class="chip" data-f="Lamborghini">Lamborghini<sup>1</sup></button></div><div style="display:flex;gap:12px;align-items:center"><span class="cnt js-cnt">12 авто</span><select class="sort" aria-label="Сортировка"><option value="def">Рекомендуем</option><option value="pd">Цена ↓</option><option value="pa">Цена ↑</option><option value="y">Сначала новые</option><option value="cv">Мощность ↓</option></select></div></div></div>
+<section class="grid" id="grid" data-grid><article class="car xl" data-id="2" data-brand="Lamborghini" data-price="350000" data-year="2025" data-km="12500" data-cv="800" tabindex="0" role="button" aria-label="Lamborghini Urus SE: подробнее">
+<div class="car__m"><img src="img/cars/c2_0.webp" alt="Lamborghini Urus SE — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c2_1.webp" alt="Lamborghini Urus SE — фото 2" loading="lazy" decoding="async"><img src="img/cars/c2_2.webp" alt="Lamborghini Urus SE — фото 3" loading="lazy" decoding="async"><img src="img/cars/c2_3.webp" alt="Lamborghini Urus SE — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2025 · 800 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Lamborghini</small>Urus SE</h3><span class="car__p">350 000 €</span></div>
+<div class="car__s"><span>12 500 км</span><span>Плагин-гибрид</span><span>Внедорожник</span></div></article><article class="car " data-id="15" data-brand="Mercedes" data-price="210000" data-year="2024" data-km="10853" data-cv="612" tabindex="0" role="button" aria-label="Mercedes-Maybach S 680: подробнее">
+<div class="car__m"><img src="img/cars/c15_0.webp" alt="Mercedes-Maybach S 680 — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c15_1.webp" alt="Mercedes-Maybach S 680 — фото 2" loading="lazy" decoding="async"><img src="img/cars/c15_2.webp" alt="Mercedes-Maybach S 680 — фото 3" loading="lazy" decoding="async"><img src="img/cars/c15_3.webp" alt="Mercedes-Maybach S 680 — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 612 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-Maybach</small>S 680</h3><span class="car__p">210 000 €</span></div>
+<div class="car__s"><span>10 853 км</span><span>Бензин</span><span>Седан</span></div></article><article class="car " data-id="6" data-brand="Porsche" data-price="148000" data-year="2023" data-km="37700" data-cv="385" tabindex="0" role="button" aria-label="Porsche 911 Targa 4: подробнее">
+<div class="car__m"><img src="img/cars/c6_0.webp" alt="Porsche 911 Targa 4 — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c6_1.webp" alt="Porsche 911 Targa 4 — фото 2" loading="lazy" decoding="async"><img src="img/cars/c6_2.webp" alt="Porsche 911 Targa 4 — фото 3" loading="lazy" decoding="async"><img src="img/cars/c6_3.webp" alt="Porsche 911 Targa 4 — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2023 · 385 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Porsche</small>911 Targa 4</h3><span class="car__p">148 000 €</span></div>
+<div class="car__s"><span>37 700 км</span><span>Бензин</span><span>Кабриолет</span></div></article><article class="car " data-id="18" data-brand="Mercedes" data-price="147000" data-year="2022" data-km="31580" data-cv="585" tabindex="0" role="button" aria-label="Mercedes-AMG SL 63: подробнее">
+<div class="car__m"><img src="img/cars/c18_0.webp" alt="Mercedes-AMG SL 63 — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c18_1.webp" alt="Mercedes-AMG SL 63 — фото 2" loading="lazy" decoding="async"><img src="img/cars/c18_2.webp" alt="Mercedes-AMG SL 63 — фото 3" loading="lazy" decoding="async"><img src="img/cars/c18_3.webp" alt="Mercedes-AMG SL 63 — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2022 · 585 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-AMG</small>SL 63</h3><span class="car__p">147 000 €</span></div>
+<div class="car__s"><span>31 580 км</span><span>Бензин</span><span>Родстер</span></div></article><article class="car " data-id="3" data-brand="Mercedes" data-price="145000" data-year="2024" data-km="9009" data-cv="367" tabindex="0" role="button" aria-label="Mercedes-Benz GLS 450 d: подробнее">
+<div class="car__m"><img src="img/cars/c3_0.webp" alt="Mercedes-Benz GLS 450 d — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c3_1.webp" alt="Mercedes-Benz GLS 450 d — фото 2" loading="lazy" decoding="async"><img src="img/cars/c3_2.webp" alt="Mercedes-Benz GLS 450 d — фото 3" loading="lazy" decoding="async"><img src="img/cars/c3_3.webp" alt="Mercedes-Benz GLS 450 d — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 367 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-Benz</small>GLS 450 d</h3><span class="car__p">145 000 €</span></div>
+<div class="car__s"><span>9 009 км</span><span>Гибрид</span><span>Внедорожник</span></div></article><article class="car " data-id="16" data-brand="Mercedes" data-price="137000" data-year="2024" data-km="33844" data-cv="612" tabindex="0" role="button" aria-label="Mercedes-AMG GLE 63 S Coupé: подробнее">
+<div class="car__m"><img src="img/cars/c16_0.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c16_1.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 2" loading="lazy" decoding="async"><img src="img/cars/c16_2.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 3" loading="lazy" decoding="async"><img src="img/cars/c16_3.webp" alt="Mercedes-AMG GLE 63 S Coupé — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 612 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-AMG</small>GLE 63 S Coupé</h3><span class="car__p">137 000 €</span></div>
+<div class="car__s"><span>33 844 км</span><span>Бензин</span><span>Внедорожник</span></div></article><article class="car " data-id="7" data-brand="BMW" data-price="91500" data-year="2024" data-km="9009" data-cv="510" tabindex="0" role="button" aria-label="BMW M4 Competition: подробнее">
+<div class="car__m"><img src="img/cars/c7_0.webp" alt="BMW M4 Competition — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c7_1.webp" alt="BMW M4 Competition — фото 2" loading="lazy" decoding="async"><img src="img/cars/c7_2.webp" alt="BMW M4 Competition — фото 3" loading="lazy" decoding="async"><img src="img/cars/c7_3.webp" alt="BMW M4 Competition — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 510 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>BMW</small>M4 Competition</h3><span class="car__p">91 500 €</span></div>
+<div class="car__s"><span>9 009 км</span><span>Бензин</span><span>Купе</span></div></article><article class="car xl" data-id="4" data-brand="BMW" data-price="87500" data-year="2022" data-km="83000" data-cv="625" tabindex="0" role="button" aria-label="BMW M8 Competition: подробнее">
+<div class="car__m"><img src="img/cars/c4_0.webp" alt="BMW M8 Competition — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c4_1.webp" alt="BMW M8 Competition — фото 2" loading="lazy" decoding="async"><img src="img/cars/c4_2.webp" alt="BMW M8 Competition — фото 3" loading="lazy" decoding="async"><img src="img/cars/c4_3.webp" alt="BMW M8 Competition — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2022 · 625 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>BMW</small>M8 Competition</h3><span class="car__p">87 500 €</span></div>
+<div class="car__s"><span>83 000 км</span><span>Бензин</span><span>Седан</span></div></article><article class="car " data-id="12" data-brand="Porsche" data-price="86000" data-year="2023" data-km="44500" data-cv="462" tabindex="0" role="button" aria-label="Porsche Panamera 4 E-Hybrid: подробнее">
+<div class="car__m"><img src="img/cars/c12_0.webp" alt="Porsche Panamera 4 E-Hybrid — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c12_1.webp" alt="Porsche Panamera 4 E-Hybrid — фото 2" loading="lazy" decoding="async"><img src="img/cars/c12_2.webp" alt="Porsche Panamera 4 E-Hybrid — фото 3" loading="lazy" decoding="async"><img src="img/cars/c12_3.webp" alt="Porsche Panamera 4 E-Hybrid — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2023 · 462 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Porsche</small>Panamera 4 E-Hybrid</h3><span class="car__p">86 000 €</span></div>
+<div class="car__s"><span>44 500 км</span><span>Плагин-гибрид</span><span>Лифтбек</span></div></article><article class="car " data-id="11" data-brand="BMW" data-price="65500" data-year="2018" data-km="69800" data-cv="530" tabindex="0" role="button" aria-label="BMW M850i xDrive: подробнее">
+<div class="car__m"><img src="img/cars/c11_0.webp" alt="BMW M850i xDrive — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c11_1.webp" alt="BMW M850i xDrive — фото 2" loading="lazy" decoding="async"><img src="img/cars/c11_2.webp" alt="BMW M850i xDrive — фото 3" loading="lazy" decoding="async"><img src="img/cars/c11_3.webp" alt="BMW M850i xDrive — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2018 · 530 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>BMW</small>M850i xDrive</h3><span class="car__p">65 500 €</span></div>
+<div class="car__s"><span>69 800 км</span><span>Бензин</span><span>Купе</span></div></article><article class="car " data-id="5" data-brand="Mercedes" data-price="64000" data-year="2019" data-km="66000" data-cv="435" tabindex="0" role="button" aria-label="Mercedes-AMG E 53 Hybrid: подробнее">
+<div class="car__m"><img src="img/cars/c5_0.webp" alt="Mercedes-AMG E 53 Hybrid — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c5_1.webp" alt="Mercedes-AMG E 53 Hybrid — фото 2" loading="lazy" decoding="async"><img src="img/cars/c5_2.webp" alt="Mercedes-AMG E 53 Hybrid — фото 3" loading="lazy" decoding="async"><img src="img/cars/c5_3.webp" alt="Mercedes-AMG E 53 Hybrid — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2019 · 435 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-AMG</small>E 53 Hybrid</h3><span class="car__p">64 000 €</span></div>
+<div class="car__s"><span>66 000 км</span><span>Бензин</span><span>Купе</span></div></article><article class="car " data-id="10" data-brand="Mercedes" data-price="61500" data-year="2024" data-km="53165" data-cv="197" tabindex="0" role="button" aria-label="Mercedes-Benz CLE 220 d: подробнее">
+<div class="car__m"><img src="img/cars/c10_0.webp" alt="Mercedes-Benz CLE 220 d — фото 1" loading="lazy" decoding="async" class=on><img src="img/cars/c10_1.webp" alt="Mercedes-Benz CLE 220 d — фото 2" loading="lazy" decoding="async"><img src="img/cars/c10_2.webp" alt="Mercedes-Benz CLE 220 d — фото 3" loading="lazy" decoding="async"><img src="img/cars/c10_3.webp" alt="Mercedes-Benz CLE 220 d — фото 4" loading="lazy" decoding="async"><div class="car__segs"><i class=on></i><i></i><i></i><i></i></div><div class="car__zones"><span></span><span></span><span></span><span></span></div><span class="car__badge">2024 · 197 л.с.</span><span class="car__tap">ТАП → ФОТО</span></div>
+<div class="car__h"><h3><small>Mercedes-Benz</small>CLE 220 d</h3><span class="car__p">61 500 €</span></div>
+<div class="car__s"><span>53 165 км</span><span>Гибрид</span><span>Кабриолет</span></div></article></section>
+<p class="wrap note" style="padding-top:30px">Показаны 12 из 46 автомобилей с red2.es на 21.10.2026. В полной версии каталог подтягивается из Dealcar автоматически.</p>
 
-<section class="cat">
-  <div class="filt" id="filt">
-    <div class="chips" id="chips"></div>
-    <div class="filt__r"><span class="count" id="count"></span><select class="sel" id="sort" aria-label="Сортировка"><option value="rec">Рекомендуем</option><option value="pa">Цена ↑</option><option value="pd">Цена ↓</option><option value="y">Год, новее</option><option value="km">Пробег, меньше</option></select></div>
-  </div>
-  <div class="grid" id="grid"></div>
-  <p class="demo-note">Демо: здесь 12 из 46 автомобилей с red2.es, данные на 21.10.2026. В рабочей версии сток обновляется автоматически из Dealcar, а цены и пробег берутся из той же базы.</p>
-
-  <div class="perks">
-    <div class="perk rv"><div class="perk__n">01</div><div class="perk__t">Гарантия 12 месяцев</div><p>На каждый автомобиль из салона.</p></div>
-    <div class="perk rv"><div class="perk__n">02</div><div class="perk__t">Трейд-ин</div><p>Оценим вашу машину и зачтём её в стоимость новой.</p></div>
-    <div class="perk rv"><div class="perk__n">03</div><div class="perk__t">Финансирование</div><p>Подберём банк, срок и платёж под вас.</p></div>
-    <div class="perk rv"><div class="perk__n">04</div><div class="perk__t">Сервис за стенкой</div><p>После покупки машину ведёт наш техцентр RED2 Auto Space.</p></div>
-  </div>
-
-  <div class="sell rv">
-    <div class="sell__img"><img src="img/ph/m4-studio.webp" alt="" loading="lazy"></div>
-    <div class="sell__b">
-      <div class="eyebrow">Продать автомобиль</div>
-      <h2 class="h-l" style="margin:14px 0 16px">Выкупим вашу машину</h2>
-      <p style="color:var(--mist);max-width:40ch">Отправьте марку, год и пробег в WhatsApp. Оценим и пригласим на осмотр в Марбелье.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><a class="btn btn--red" href="https://wa.me/34699589358?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE" target="_blank" rel="noopener">Оценить в WhatsApp</a><a class="btn btn--ghost" href="tel:+34699589358">+34 699 589 358</a></div>
-    </div>
-  </div>
+<section class="sec wrap" data-dist="660 FT">
+ <div class="sh"><div class="sh__k"><span class="num">02 / ПОКУПКА</span><span class="kicker"><i></i>Как это работает</span></div><h2 class="disp h-m sh__t" data-split>От звонка до ключей — <em>четыре шага</em></h2></div>
+ <div class="steps"><div class="step" data-fade><span class="num">01</span><h4>Выбор</h4><p>Шоурум или видеообзор в WhatsApp — на русском, английском или испанском.</p></div><div class="step" data-fade><span class="num">02</span><h4>Проверка</h4><p>Диагностика в собственном техцентре и история обслуживания. <span class="flag flag--ink">подтвердить</span></p></div><div class="step" data-fade><span class="num">03</span><h4>Финансы</h4><p>Финансирование, трейд-ин вашего автомобиля, оформление документов.</p></div><div class="step" data-fade><span class="num">04</span><h4>Ключи</h4><p>Гарантия 12 месяцев и сервис через дорогу — там же, где купили.</p></div></div>
 </section>
-
-<div class="drawer" id="drawer" aria-hidden="true">
-  <div class="drawer__bg" data-close></div>
-  <aside class="drawer__p" role="dialog" aria-modal="true" aria-label="Автомобиль">
-    <button class="drawer__x" data-close aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <div class="drawer__sc" id="drSc"></div>
-  </aside>
-</div>
+<section class="sec dark" data-dist="1000 FT">
+ <div class="wrap split"><div class="split__m" data-clip><video data-src="media/hero-m4.mp4" poster="media/hero-m4.webp" muted playsinline loop preload="none" data-inview data-par="8"></video></div>
+ <div class="split__b"><span class="kicker" style="color:var(--smoke)"><i></i>Под заказ</span><h2 class="disp h-m" data-split>Нет в зале? <em>Привезём</em> из Европы.</h2><p class="lead" style="opacity:.8">Подберём автомобиль в Германии и ЕС, проверим, растаможим и поставим на учёт в Испании. <span class="flag">условия подтвердить</span></p>
+ <ul class="ticks"><li>Германия, Италия, Франция<b>подбор</b></li><li>Проверка перед покупкой<b>наш сервис</b></li><li>Выкуп вашего авто<b>трейд-ин</b></li></ul>
+ <a class="btn btn--red btn--wa" href="https://wa.me/34699589358?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE" target="_blank" rel="noopener">Заказать подбор<b>↗</b></a></div></div>
+</section>
+<div class="sheet" aria-hidden="true"><div class="sheet__bg"></div><div class="sheet__p" role="dialog" aria-modal="true" aria-label="Карточка автомобиля"><button class="sheet__x" aria-label="Закрыть">×</button>
+<div class="sheet__g"><div class="sheet__track"></div><div class="sheet__dots"></div><div class="sheet__nav"><button data-d="-1" aria-label="Назад">←</button><button data-d="1" aria-label="Вперёд">→</button></div></div>
+<div class="sheet__i"><h3><small></small><span class="t"></span></h3><div class="sheet__price"></div><div class="specs"></div>
+<p class="note">Каждый автомобиль перед продажей проходит проверку в собственном техцентре RED2 <span class="flag flag--ink">подтвердить</span></p>
+<div class="sheet__cta"><a class="btn btn--red btn--wa js-wa" target="_blank" rel="noopener" href="#">Спросить в WhatsApp<b>↗</b></a><a class="btn btn--ghost js-src" target="_blank" rel="noopener" href="#">Объявление на red2.es<b>↗</b></a><p class="note">Финансирование, трейд-ин и гарантия 12 месяцев — по условиям RED2 Auto Gallery.</p></div></div></div></div>
 </main>
-
-<footer class="ftr">
-  <div class="ftr__top">
-    <div>RED2 Auto Space · RED2 Auto Gallery<br>Марбелья, Сан-Педро-де-Алькантара</div>
-    <nav><a href="autosalon.html">Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#racing">Racing</a><a href="https://www.instagram.com/redauto.space2.spain/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a></nav>
-  </div>
-  <div class="ftr__word" aria-hidden="true"><span>R</span><span>E</span><span>D</span><span>2</span></div>
-  <div class="ftr__bot"><span>Демо-концепт NetWorX · не индексируется · 2026</span><span>Фото: red2.es, taller.red2.es</span></div>
-</footer>
-<a class="fab" id="fab" href="https://wa.me/34681997777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 4.9c2.1.9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
-<script src="js/cars.js?v=1"></script>
+<footer class="ft" data-dist="FINISH"><div class="ft__cta"><h2 class="disp h-l" data-split>Финиш здесь.<br><em>Старт</em> — за вами.</h2><a class="btn btn--red btn--wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp<b>↗</b></a></div>
+<div class="ft__grid"><div><h6>Автосалон</h6><p>RED2 Auto Gallery</p><p>Calle Fragua 20, угол C. Granito</p><a href="tel:+34699589358">+34 699 589 358</a></div><div><h6>Сервис</h6><p>RED2 Auto Space</p><p>C. Platino 1, 29603</p><a href="tel:+34681997777">+34 681 99 77 77</a></div><div><h6>Часы</h6><p>Пн–Пт 9:00–19:00</p><p>Сб 10:00–14:00</p></div><div><h6>Соцсети</h6><a href="https://www.instagram.com/redauto.space2.spain/" target="_blank" rel="noopener">Instagram · Сервис</a><a href="https://www.instagram.com/red2.autogallery/" target="_blank" rel="noopener">Instagram · Gallery</a><a href="https://www.tiktok.com/@red27336" target="_blank" rel="noopener">TikTok</a></div></div>
+<div class="ft__mega" aria-hidden="true">RED<span>2</span></div>
+<div class="ft__legal"><span>© 2026 RED2 · Сан-Педро-де-Алькантара, Марбелья</span><span>Демо-версия NetWorX · не индексируется</span></div></footer>
+<div class="dock"><a class="wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a><a class="pr" href="#grid">К машинам</a></div>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="js/site.js?v=2"></script>
-</body>
-</html>
+<script src="js/cars.js?v=3"></script><script src="js/r2.js?v=3"></script></body></html>

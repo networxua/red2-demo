@@ -1,99 +1,57 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="ru" class="js"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex,nofollow">
-<title>Сервис RED2 Auto Space · Марбелья · демо</title>
-<meta name="description" content="Демо-концепт нового сайта RED2 (Марбелья). Не индексируется.">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="robots" content="noindex,nofollow"><title>Сервис RED2 — техцентр премиальных авто в Марбелье</title><meta name="description" content="ТО, PPF, развал 3D, электрика, тюнинг. Запись онлайн. Демо.">
+<meta name="theme-color" content="#15120f"><link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
-<link rel="icon" href="img/favicon.png">
-</head>
-<body class="is-loading page-svc">
-<div class="curtain" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-<header class="hdr" id="hdr">
-  <a class="hdr__logo" href="index.html" aria-label="RED2 — на главную"><img src="img/logo-red2.png" alt="RED2" width="129" height="22"></a>
-  <nav class="hdr__nav"><a href="autosalon.html">Автосалон</a><a href="servis.html" class="is-on">Сервис</a><a href="index.html#racing">Racing</a><a href="index.html#contacts">Контакты</a></nav>
-  <div class="hdr__right">
-    <div class="lang" role="group" aria-label="Язык"><button class="is-on">RU</button><button data-l="EN">EN</button><button data-l="ES">ES</button></div>
-    <a class="btn btn--ghost btn--sm hdr__wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn btn--red btn--sm" href="servis.html#book">Записаться</a>
-    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
-  </div>
-</header>
-<div class="lang__tip" id="langTip">EN и ES появятся в рабочей версии</div>
-<nav class="mnav" id="mnav"><a class="big" href="autosalon.html">Автосалон<small>01</small></a><a class="big" href="servis.html">Сервис<small>02</small></a><a class="big" href="index.html#racing">Racing<small>03</small></a><a class="big" href="index.html#contacts">Контакты<small>04</small></a>
-  <div class="mnav__foot"><a class="mono" href="tel:+34681997777">Сервис · +34 681 99 77 77</a><a class="mono" href="tel:+34699589358">Автосалон · +34 699 589 358</a><span style="color:var(--steel)">RU · EN · ES</span></div>
-</nav>
-<main id="top">
-<section class="phero">
-  <div class="phero__bg"><img src="img/ph/lift-812.webp" alt="Ferrari 812 на подъёмнике в RED2" data-hero-img></div>
-  <div class="wrap phero__in">
-    <div>
-      <div class="crumbs"><a href="index.html">RED2</a> / Сервис</div>
-      <h1 class="h-xxl split" data-split>Сервис</h1>
-      <p class="lead rv" style="margin-top:16px">Независимый техцентр для премиальных и спортивных автомобилей в Марбелье. Обслуживание у нас не влияет на заводскую гарантию.</p>
-    </div>
-    <div class="phero__stats rv"><div><b>24 ч</b>запись</div><div><b>8</b>подъёмников</div><div><b>3</b>языка</div></div>
-  </div>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500;1,600&family=Onest:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/r2.css?v=3">
+<script>try{var h=document.documentElement;if(matchMedia('(prefers-reduced-motion: reduce)').matches)h.classList.add('no-intro');else if(sessionStorage.r2pt)h.classList.add('pt-in');else if(sessionStorage.r2i)h.classList.add('no-intro')}catch(e){}</script>
+</head><body data-page="svc"><div class="intro" aria-hidden="true"><div class="intro__tree"><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb"></i><i class="bulb"></i></div><div class="intro__row"><i class="bulb g"></i><i class="bulb g"></i></div></div><div class="intro__cap">RED2 · LAUNCH CONTROL</div><div class="intro__rt">R/T 0.000</div></div>
+<div class="prog"></div>
+<header class="hdr"><a class="hdr__logo" href="index.html" aria-label="RED2 — на главную"><img class="lt" src="img/logo-red2.png" alt="RED2" width="117" height="20"><img class="ink" src="img/logo-ink.png" alt="" width="117" height="20"><span class="hdr__dist"><span>START</span></span></a>
+<nav class="hdr__nav"><a href="autosalon.html">Автосалон</a><a href="servis.html" aria-current=page>Сервис</a><a href="index.html#club">Club</a><a href="index.html#loc">Контакты</a></nav>
+<div class="hdr__r"><div class="lang"><a class="on" href="#">RU</a><a href="#" title="в полной версии">EN</a><a href="#" title="в полной версии">ES</a></div><a class="hdr__wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a><button class="burger" aria-label="Меню"><i></i><i></i></button></div></header>
+<div class="mnav"><nav><a class="big" href="index.html">Главная<small>START</small></a><a class="big" href="autosalon.html"><em>Авто</em>салон<small>46 АВТО</small></a><a class="big" href="servis.html">Сервис<small>ЗАПИСЬ</small></a><a class="big" href="index.html#club">Club<small>RACING</small></a></nav>
+<div class="mnav__foot"><div class="lang"><a class="on" href="#">RU</a><a href="#">EN</a><a href="#">ES</a></div><a href="tel:+34681997777">Сервис · +34 681 99 77 77</a><a href="tel:+34699589358">Автосалон · +34 699 589 358</a><a class="btn btn--red btn--wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp<b>↗</b></a></div></div>
+<main>
+<section class="ph" data-dist="START">
+ <div class="ph__b"><div><span class="kicker" style="opacity:.8"><i></i>RED2 Auto Space · Техцентр</span></div>
+  <h1 class="disp h-xl" data-hero-title><span class="ln"><span>Пит-лейн</span></span><span class="ln"><span>для <em>ваших</em></span></span><span class="ln"><span>лошадей.</span></span></h1>
+  <div class="ph__meta" data-hero-side><div><span class="num"><span data-count="8">0</span></span><span>подъёмников</span></div><div><span class="num"><span data-count="1660">0</span></span><span>м² боксов</span></div><div><span class="num"><span data-count="24">0</span> ч</span><span>запись</span></div></div>
+  <a class="btn btn--red" href="#book" style="align-self:start">Записаться<b>↓</b></a></div>
+ <div class="ph__v" data-clip><video src="media/ppf.mp4" poster="media/ppf.webp" muted playsinline loop autoplay preload="auto"></video></div>
 </section>
-<div class="svc">
-  <div class="wrap svc__intro">
-    <h2 class="h-xl split" data-split>Мастер на каждую задачу</h2>
-    <p class="lead rv" style="color:#3c3f45">Моторист, автоэлектрик, мастер по плёнке: у каждого направления свой узкий специалист. Другие сервисы отправляют к нам машины, с которыми не справились сами.</p>
-  </div>
-  <nav class="svc__nav" id="svcNav"><a class="chip" href="#diag">Диагностика</a><a class="chip" href="#to">ТО и механика</a><a class="chip" href="#engine">Двигатель и трансмиссия</a><a class="chip" href="#susp">Подвеска, тормоза, рулевое</a><a class="chip" href="#align">Развал и шиномонтаж</a><a class="chip" href="#body">Кузов и покраска</a><a class="chip" href="#ppf">PPF, винил, детейлинг</a><a class="chip" href="#elec">Электрика и электроника</a><a class="chip" href="#tune">Тюнинг и выхлоп</a><a class="chip" href="#ev">Гибриды и электромобили</a><a class="chip" href="#itv">ITV и экспертиза</a><a class="chip" href="#fleet">Корпоративным клиентам</a></nav>
-  <section class="grp" id="diag"><div class="grp__side"><div class="grp__n">01 / 12</div><h2 class="grp__t">Диагностика</h2><p class="grp__d">Ищем причину, а не гасим симптомы. Официальное ПО марок и осциллограф.</p><div class="grp__img" data-clip><img src="img/ph/interior.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>Компьютерная диагностика OEM: ODIS, PIWIS, ISTA</li><li>Диагностика CAN-шин и блоков управления</li><li>Проверка и калибровка датчиков</li><li>Адаптации и кодирование блоков</li><li>Обновление и перепрошивка ЭБУ</li><li>Плавающие ошибки и утечки тока</li><li>Техническое заключение о состоянии авто</li></ul></section><section class="grp" id="to"><div class="grp__side"><div class="grp__n">02 / 12</div><h2 class="grp__t">ТО и механика</h2><p class="grp__d">Регламент по нормам производителя, без «универсальных» масел и фильтров.</p><div class="grp__img" data-clip><img src="img/ph/workshop-s.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>ТО по регламенту производителя</li><li>Масла двигателя, АКПП, DSG, PDK, дифференциалов</li><li>Фильтры: масло, воздух, салон, топливо</li><li>Свечи и катушки зажигания</li><li>Ремни и цепи ГРМ</li><li>Охлаждающая жидкость, проверка утечек</li><li>Обслуживание гибридов и электромобилей</li></ul></section><section class="grp" id="engine"><div class="grp__side"><div class="grp__n">03 / 12</div><h2 class="grp__t">Двигатель и трансмиссия</h2><p class="grp__d">От замены сальников до полной сборки двигателя и усиления коробки.</p></div><ul class="items rv-list"><li>Ремонт и капремонт двигателя</li><li>Турбины и компрессоры</li><li>Системы впрыска GDI / MPI</li><li>Головки и блоки цилиндров</li><li>АКПП, DSG, PDK, ZF, роботы и механика</li><li>Сцепление, включая керамическое и карбоновое</li><li>Дифференциалы и раздатки</li></ul></section><section class="grp" id="susp"><div class="grp__side"><div class="grp__n">04 / 12</div><h2 class="grp__t">Подвеска, тормоза, рулевое</h2><p class="grp__d">Адаптивные и пневмоподвески, карбон-керамика, спортивные настройки.</p><div class="grp__img" data-clip><img src="img/ph/r8-lift-s.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>Диагностика подвески на подъёмнике и в дороге</li><li>Адаптивные амортизаторы и пневмоподвеска</li><li>Рулевые рейки и EPS</li><li>Установка KW, Öhlins</li><li>Диски и колодки, карбон-керамика</li><li>Brembo, AP Racing</li><li>ABS / ESP</li></ul></section><section class="grp" id="align"><div class="grp__side"><div class="grp__n">05 / 12</div><h2 class="grp__t">Развал и шиномонтаж</h2><p class="grp__d">Без очереди: развал 3D занимает 40–90 минут.</p><div class="grp__price"><b>90 €</b><span>развал 3D, с IVA</span></div></div><ul class="items rv-list"><li>Развал-схождение 3D</li><li>Спортивная настройка под трек и драг</li><li>Подбор премиальных шин</li><li>Бережный монтаж</li><li>Высокоскоростная балансировка</li><li>Хранение шин</li><li>Правка дисков</li></ul></section><section class="grp" id="body"><div class="grp__side"><div class="grp__n">06 / 12</div><h2 class="grp__t">Кузов и покраска</h2><p class="grp__d">Своя покрасочная камера и контроль качества на каждом этапе.</p><div class="grp__img" data-clip><img src="img/ph/812-graffiti.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>Локальный и полный ремонт</li><li>Покраска в камере: глянец, мат, сатин</li><li>Восстановление после ДТП</li><li>Алюминий и карбон</li><li>Пластик бамперов</li><li>Smart repair сколов и царапин</li><li>Работа со страховыми компаниями</li></ul></section><section class="grp has-img" id="ppf"><div class="grp__side"><div class="grp__n">07 / 12</div><h2 class="grp__t">PPF, винил, детейлинг</h2><p class="grp__d">Приоритетное направление: в Марбелье солнце и солёный воздух быстро съедают лак.</p><div class="grp__img" data-clip><img src="img/ph/812-rear-detail.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>Полная оклейка PPF</li><li>Частичная: перед, пороги, зоны риска</li><li>Матовые и цветные плёнки</li><li>Антихром</li><li>Полировка в один и несколько этапов</li><li>Керамика и жидкое стекло</li><li>Химчистка, озонирование, уход за кожей</li></ul></section><section class="grp" id="elec"><div class="grp__side"><div class="grp__n">08 / 12</div><h2 class="grp__t">Электрика и электроника</h2><p class="grp__d">Автоэлектрик, к которому другие сервисы отправляют своих клиентов.</p><div class="grp__img" data-clip><img src="img/ph/taillight.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>Ремонт проводки и блоков управления</li><li>Стартеры и генераторы</li><li>Сигнализации, иммобилайзеры, GPS-трекеры</li><li>Камеры и парктроники</li><li>LED и лазерная оптика</li><li>Калибровка радаров и ADAS</li><li>CarPlay, Android Auto, аудио</li></ul></section><section class="grp" id="tune"><div class="grp__side"><div class="grp__n">09 / 12</div><h2 class="grp__t">Тюнинг и выхлоп</h2><p class="grp__d">Stage 1–3 с сертифицированными решениями, выхлоп на заказ.</p><div class="grp__img" data-clip><img src="img/ph/gt2rs-track.webp" alt="" loading="lazy"></div></div><ul class="items rv-list"><li>Чип-тюнинг ECU / TCU</li><li>Stage 1–3, апгрейд турбин</li><li>Форсунки и топливная система</li><li>Интеркулеры и радиаторы</li><li>Выхлоп Akrapovič, Capristo, на заказ</li><li>Клапанные системы</li><li>Аэродинамика, лёгкие диски</li></ul></section><section class="grp" id="ev"><div class="grp__side"><div class="grp__n">10 / 12</div><h2 class="grp__t">Гибриды и электромобили</h2><p class="grp__d">Сертифицированный доступ к высоковольтным системам.</p></div><ul class="items rv-list"><li>Диагностика HV-систем</li><li>Обслуживание батарей</li><li>Охлаждение батарей и инверторов</li><li>Ремонт модулей зарядки</li><li>Проверка SOH батареи</li></ul></section><section class="grp" id="itv"><div class="grp__side"><div class="grp__n">11 / 12</div><h2 class="grp__t">ITV и экспертиза</h2><p class="grp__d">Подготовка к техосмотру под ключ и проверка перед покупкой.</p></div><ul class="items rv-list"><li>Подготовка и прохождение ITV / TÜV</li><li>Осмотр авто перед покупкой</li><li>Проверка истории и сервисной книжки</li><li>Экспертиза после ДТП</li><li>Оценка стоимости ремонта</li></ul></section><section class="grp" id="fleet"><div class="grp__side"><div class="grp__n">12 / 12</div><h2 class="grp__t">Корпоративным клиентам</h2><p class="grp__d">Автопарки компаний: договор, сроки и выездной сервис.</p></div><ul class="items rv-list"><li>Обслуживание автопарков</li><li>Сервисные контракты и SLA</li><li>Выездной сервис</li><li>Особые условия гарантии и оплаты</li></ul></section>
-</div>
-<section class="prem">
-  <div class="wrap">
-    <div class="eyebrow rv"><b>+</b>Премиальный сервис</div>
-    <h2 class="h-xl split" data-split style="margin-top:18px">Вы не теряете ни времени, ни контроля</h2>
-    <div class="prem__grid">
-      <div class="prem__it rv"><b>Смета письменно</b><span>Фиксированная цена до начала работ</span></div>
-      <div class="prem__it rv"><b>Фото и видео</b><span>Онлайн-отчёт о каждом этапе</span></div>
-      <div class="prem__it rv"><b>Подменный авто</b><span>Пока ваша машина у нас</span></div>
-      <div class="prem__it rv"><b>Эвакуатор</b><span>Заберём и доставим</span></div>
-      <div class="prem__it rv"><b>Хранение</b><span>Охраняемая закрытая парковка</span></div>
-      <div class="prem__it rv"><b>Гарантия</b><span>На все виды работ</span></div>
-    </div>
-  </div>
+<div class="mq" data-mq><div class="mq__t"><span>ODIS</span><span>PIWIS</span><span>ISTA</span><span>Akrapovič</span><span>Capristo</span><span>KW</span><span>Öhlins</span><span>Brembo</span></div></div>
+<section class="sec wrap" data-dist="60 FT">
+ <div class="split"><div class="split__b"><span class="kicker"><i></i>01 / Подход</span><h2 class="disp h-m" data-split>Свой мастер на <em>каждую</em> задачу</h2><p class="lead">Моторист, автоэлектрик, мастер по плёнке — у каждого направления узкий специалист. Независимый сервис: обслуживание у нас не влияет на заводскую гарантию.</p>
+ <ul class="ticks"><li>Смета письменно, до начала работ<b>фикс</b></li><li>Фото и видео каждого этапа<b>WhatsApp</b></li><li>Подменный авто, эвакуатор<b>по запросу</b></li><li>Гарантия на работы<b>срок подтвердить</b></li></ul></div>
+ <div class="split__m" data-clip><img src="img/ph/ferrari-bay.webp" alt="Ferrari в боксе RED2" loading="lazy" data-par="10"></div></div>
 </section>
-<section class="book" id="book">
-  <div class="wrap book__grid">
-    <div>
-      <div class="eyebrow rv"><b>→</b>Онлайн-запись</div>
-      <h2 class="h-xl split" data-split style="margin-top:18px">Запись за 30 секунд</h2>
-      <p class="lead rv" style="margin-top:18px;color:#3c3f45">Номер машины, услуга и удобное время. Менеджер подтвердит запись в WhatsApp на вашем языке.</p>
-      <p class="note" style="color:#6b6f76">Демо: форма никуда не отправляет данные.</p>
-    </div>
-    <form class="form rv" id="bookForm" novalidate>
-      <div class="fld"><label for="f-plate">Номер авто</label><span class="plate"><input id="f-plate" placeholder="1234 ABC" maxlength="10" autocomplete="off"></span></div>
-      <div class="fld"><label for="f-svc">Услуга</label><select id="f-svc"><option>ТО и механика</option><option>PPF и детейлинг</option><option>Развал и шиномонтаж</option><option>Электрика</option><option>Кузов и покраска</option><option>Тюнинг</option><option>Другое</option></select></div>
-      <div class="fld fld--w"><label>Когда удобно</label><div class="slots" id="slots"></div></div>
-      <div class="fld"><label for="f-name">Имя</label><input id="f-name" autocomplete="name"></div>
-      <div class="fld"><label for="f-tel">Телефон / WhatsApp</label><input id="f-tel" type="tel" inputmode="tel" placeholder="+34" autocomplete="tel"></div>
-      <div class="fld fld--w"><button class="btn btn--dark" type="submit" style="width:100%;justify-content:center;height:56px">Записаться</button></div>
-      <div class="form__ok" id="bookOk"></div>
-    </form>
-  </div>
+<section class="sec wrap" data-dist="330 FT" style="padding-top:0">
+ <div class="sh"><div class="sh__k"><span class="num">02 / УСЛУГИ</span><span class="kicker"><i></i>Меню боксов</span></div><h2 class="disp h-m sh__t" data-split>Что мы <em>делаем</em></h2></div>
+ <div class="acc" data-acc><div class="acc__i" id="diag"><button class="acc__h" aria-expanded="false"><span class="num">01</span><h4>Диагностика</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>OEM: ODIS, PIWIS, ISTA</li><li>CAN-шины и блоки управления</li><li>Калибровка датчиков</li><li>Кодирование и адаптации</li><li>Перепрошивка ЭБУ</li><li>Плавающие ошибки, утечки тока</li></ul><figure><img src="img/ph/ferrari-bay-m.webp" alt="Диагностика" loading="lazy"></figure></div></div></div><div class="acc__i" id="to"><button class="acc__h" aria-expanded="false"><span class="num">02</span><h4>ТО и механика</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>ТО по регламенту производителя</li><li>Масла ДВС, АКПП, DSG, PDK</li><li>Фильтры, свечи, катушки</li><li>Ремни и цепи ГРМ</li><li>Гибриды и электромобили</li></ul><figure><img src="img/ph/lift-812-m.webp" alt="ТО и механика" loading="lazy"></figure></div></div></div><div class="acc__i" id="ppf"><button class="acc__h" aria-expanded="false"><span class="num">03</span><h4>PPF, винил, детейлинг</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Полная оклейка PPF</li><li>Зоны риска: перед, пороги</li><li>Матовые и цветные плёнки, антихром</li><li>Полировка, керамика</li><li>Химчистка, уход за кожей</li></ul><figure><img src="media/ppf.webp" alt="PPF, винил, детейлинг" loading="lazy"></figure></div></div></div><div class="acc__i" id="align"><button class="acc__h" aria-expanded="false"><span class="num">04</span><h4>Развал и шиномонтаж</h4><span class="pr">от 90 € с IVA</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Развал-схождение 3D, 40–90 мин</li><li>Настройка под трек и драг</li><li>Премиальные шины, бережный монтаж</li><li>Высокоскоростная балансировка</li><li>Хранение шин, правка дисков</li></ul><figure><img src="img/ph/r8-lift-s.webp" alt="Развал и шиномонтаж" loading="lazy"></figure></div></div></div><div class="acc__i" id="el"><button class="acc__h" aria-expanded="false"><span class="num">05</span><h4>Электрика и электроника</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Проводка и блоки управления</li><li>Стартеры, генераторы</li><li>Сигнализации, GPS-трекеры</li><li>LED и лазерная оптика</li><li>Калибровка радаров и ADAS</li><li>CarPlay, Android Auto</li></ul><figure><img src="img/ph/taillight.webp" alt="Электрика и электроника" loading="lazy"></figure></div></div></div><div class="acc__i" id="susp"><button class="acc__h" aria-expanded="false"><span class="num">06</span><h4>Подвеска и тормоза</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Адаптивные и пневмоподвески</li><li>KW, Öhlins</li><li>Карбон-керамика, Brembo, AP Racing</li><li>Рулевые рейки, EPS</li><li>ABS / ESP</li></ul><figure><img src="img/ph/r8-studio.webp" alt="Подвеска и тормоза" loading="lazy"></figure></div></div></div><div class="acc__i" id="body"><button class="acc__h" aria-expanded="false"><span class="num">07</span><h4>Кузов и покраска</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Покрасочная камера: глянец, мат, сатин</li><li>Восстановление после ДТП</li><li>Алюминий и карбон</li><li>Smart repair</li><li>Работа со страховыми</li></ul><figure><img src="img/ph/m4-studio.webp" alt="Кузов и покраска" loading="lazy"></figure></div></div></div><div class="acc__i" id="tune"><button class="acc__h" aria-expanded="false"><span class="num">08</span><h4>Тюнинг и выхлоп</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Чип-тюнинг ECU / TCU, Stage 1–3</li><li>Апгрейд турбин и топливной</li><li>Akrapovič, Capristo, на заказ</li><li>Клапанные системы</li><li>Аэродинамика, лёгкие диски</li></ul><figure><img src="img/ph/812-rear-detail.webp" alt="Тюнинг и выхлоп" loading="lazy"></figure></div></div></div><div class="acc__i" id="itv"><button class="acc__h" aria-expanded="false"><span class="num">09</span><h4>ITV и экспертиза</h4><span class="pr">по запросу</span><span class="pm">+</span></button><div class="acc__b"><div class="acc__c"><span></span><ul><li>Подготовка и прохождение ITV</li><li>Осмотр перед покупкой</li><li>Проверка истории</li><li>Экспертиза после ДТП</li></ul><figure><img src="img/ph/bentley-studio.webp" alt="ITV и экспертиза" loading="lazy"></figure></div></div></div></div>
+</section>
+<section class="sec dark" data-dist="660 FT">
+ <div class="wrap"><div class="sh"><div class="sh__k"><span class="num">03 / ВИЗИТ</span><span class="kicker"><i></i>Пит-стоп</span></div><h2 class="disp h-m sh__t" data-split>Четыре шага <em>без ожидания</em></h2></div>
+ <div class="steps"><div class="step" data-fade><span class="num">01</span><h4>Запись</h4><p>Онлайн или в WhatsApp. Подтверждаем в течение дня на вашем языке.</p></div><div class="step" data-fade><span class="num">02</span><h4>Диагностика</h4><p>OEM-софт, подъёмник, тест-драйв. Причина, а не симптом.</p></div><div class="step" data-fade><span class="num">03</span><h4>Смета</h4><p>Фиксированная цена письменно. Ничего лишнего без согласования.</p></div><div class="step" data-fade><span class="num">04</span><h4>Выдача</h4><p>Фото- и видеоотчёт, чистая машина, гарантия на работы.</p></div></div></div>
+</section>
+<section class="sec wrap" id="book" data-dist="1/4 MILE">
+ <div class="book"><div class="split__b"><span class="kicker"><i></i>04 / Онлайн-запись</span><h2 class="disp h-l" data-split>Запись <em>за 30 секунд</em></h2><p class="lead">Номер машины, услуга и удобное время. Менеджер подтвердит запись в WhatsApp.</p><p class="note">Демо: форма никуда не отправляет данные.</p></div>
+ <form class="form" novalidate data-form><div class="form__h"><span>RED2 · Заявка</span><span class="js-ticket">№ —</span></div>
+  <label class="fl"><span>Номер авто</span><span class="plate"><i>E</i><input name="plate" placeholder="1234 ABC" maxlength="10" autocomplete="off"></span></label>
+  <label class="fl"><span>Услуга</span><select name="svc"><option>Диагностика</option><option>ТО и механика</option><option>PPF, винил, детейлинг</option><option>Развал и шиномонтаж</option><option>Электрика и электроника</option><option>Подвеска и тормоза</option><option>Кузов и покраска</option><option>Тюнинг и выхлоп</option><option>ITV и экспертиза</option></select></label>
+  <div class="fl"><span>Когда удобно</span><div class="slots js-slots"></div></div>
+  <label class="fl"><span>Имя</span><input name="name" autocomplete="name"></label>
+  <label class="fl"><span>Телефон / WhatsApp</span><input name="tel" type="tel" inputmode="tel" placeholder="+34" autocomplete="tel"></label>
+  <button class="btn btn--red" type="submit">Записаться<b>→</b></button><div class="form__ok" role="status"></div></form></div>
 </section>
 </main>
-<footer class="ftr">
-  <div class="ftr__top">
-    <div>RED2 Auto Space · RED2 Auto Gallery<br>Марбелья, Сан-Педро-де-Алькантара</div>
-    <nav><a href="autosalon.html">Автосалон</a><a href="servis.html">Сервис</a><a href="index.html#racing">Racing</a><a href="https://www.instagram.com/redauto.space2.spain/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a></nav>
-  </div>
-  <div class="ftr__word" aria-hidden="true"><span>R</span><span>E</span><span>D</span><span>2</span></div>
-  <div class="ftr__bot"><span>Демо-концепт NetWorX · не индексируется · 2026</span><span>Фото: red2.es, taller.red2.es</span></div>
-</footer>
-<a class="fab" id="fab" href="https://wa.me/34681997777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 4.9c2.1.9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<footer class="ft" data-dist="FINISH"><div class="ft__cta"><h2 class="disp h-l" data-split>Финиш здесь.<br><em>Старт</em> — за вами.</h2><a class="btn btn--red btn--wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">Написать в WhatsApp<b>↗</b></a></div>
+<div class="ft__grid"><div><h6>Автосалон</h6><p>RED2 Auto Gallery</p><p>Calle Fragua 20, угол C. Granito</p><a href="tel:+34699589358">+34 699 589 358</a></div><div><h6>Сервис</h6><p>RED2 Auto Space</p><p>C. Platino 1, 29603</p><a href="tel:+34681997777">+34 681 99 77 77</a></div><div><h6>Часы</h6><p>Пн–Пт 9:00–19:00</p><p>Сб 10:00–14:00</p></div><div><h6>Соцсети</h6><a href="https://www.instagram.com/redauto.space2.spain/" target="_blank" rel="noopener">Instagram · Сервис</a><a href="https://www.instagram.com/red2.autogallery/" target="_blank" rel="noopener">Instagram · Gallery</a><a href="https://www.tiktok.com/@red27336" target="_blank" rel="noopener">TikTok</a></div></div>
+<div class="ft__mega" aria-hidden="true">RED<span>2</span></div>
+<div class="ft__legal"><span>© 2026 RED2 · Сан-Педро-де-Алькантара, Марбелья</span><span>Демо-версия NetWorX · не индексируется</span></div></footer>
+<div class="dock"><a class="wa" href="https://wa.me/34681997777" target="_blank" rel="noopener">WhatsApp</a><a class="pr" href="#book">Записаться</a></div>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="js/site.js?v=2"></script>
-</body>
-</html>
+<script src="js/cars.js?v=3"></script><script src="js/r2.js?v=3"></script></body></html>
