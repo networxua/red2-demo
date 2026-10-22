@@ -57,9 +57,9 @@ function heroIn(){
   const tb=$$('.tree .bulb');
   if(RM){return;}
   const tl=G.timeline();
-  tl.from(panels,{scale:1.18,duration:1.6,ease:'expo.out',stagger:.08},0)
-    .from(lines,{yPercent:110,duration:1.1,ease:'expo.out',stagger:.09},.05);
-  if(side)tl.from(side.children,{y:30,opacity:0,duration:.9,ease:'power3.out',stagger:.08},.35);
+  if(panels.length)tl.from(panels,{scale:1.18,duration:1.6,ease:'expo.out',stagger:.08},0);
+  if(lines.length)tl.from(lines,{yPercent:110,duration:1.1,ease:'expo.out',stagger:.09},.05);
+  if(side)tl.from(side.children.length?side.children:side,{y:30,opacity:0,duration:.9,ease:'power3.out',stagger:.08},.35);
   if(lanes)tl.from(lanes.children,{yPercent:100,duration:.9,ease:'expo.out',stagger:.08},.45);
   tb.forEach((b,i)=>tl.add(()=>b.classList.add(i<3?'on':'go'),.3+i*.16));
   tl.add(()=>tb.slice(0,3).forEach(b=>{b.classList.remove('on');b.classList.add('go')}),.3+4*.16);
@@ -116,8 +116,8 @@ function reveals(){
   });
   $$('[data-par]').forEach(el=>{const v=+el.dataset.par||10;
     G.fromTo(el,{yPercent:-v},{yPercent:v,ease:'none',scrollTrigger:{trigger:el.closest('[data-clip]')||el,start:'top bottom',end:'bottom top',scrub:true}});});
-  G.set('[data-fade]',{y:36});
-  ST.batch('[data-fade]',{start:'top 90%',onEnter:b=>G.to(b,{opacity:1,y:0,duration:.9,ease:'power3.out',stagger:.1,overwrite:true})});
+  if($$('[data-fade]').length){G.set('[data-fade]',{y:36});
+  ST.batch('[data-fade]',{start:'top 90%',onEnter:b=>G.to(b,{opacity:1,y:0,duration:.9,ease:'power3.out',stagger:.1,overwrite:true})});}
   $$('[data-count]').forEach(el=>{if(el.closest('.ph')||el.closest('[data-champ]'))return;el.textContent=fmt(+el.dataset.from||0,+(el.dataset.dec||0));ST.create({trigger:el,start:'top 92%',once:true,onEnter:()=>count(el)});});
 }
 if(RM){ /* show everything */ }
@@ -240,71 +240,5 @@ const d=document,$=(s,c=d)=>c.querySelector(s),$$=(s,c=d)=>[...c.querySelectorAl
 const G=window.gsap,RM=matchMedia('(prefers-reduced-motion: reduce)').matches,TOUCH=matchMedia('(hover:none)').matches;
 const CARS=window.CARS||[];const byId=id=>CARS.find(c=>c.id==id);
 const eur=n=>n.toLocaleString('ru-RU').replace(/\s/g,'\u202f')+' €';
-/* card galleries */
-$$('.car').forEach(card=>{
-  const imgs=$$('.car__m img',card),segs=$$('.car__segs i',card);let cur=0;
-  const show=i=>{cur=(i+imgs.length)%imgs.length;imgs.forEach((im,k)=>im.classList.toggle('on',k===cur));segs.forEach((s,k)=>s.classList.toggle('on',k===cur));};
-  $$('.car__zones span',card).forEach((z,i)=>z.addEventListener('mouseenter',()=>show(i)));
-  card.addEventListener('mouseleave',()=>show(0));
-  $('.car__m',card).addEventListener('click',e=>{if(TOUCH||innerWidth<=900){e.stopPropagation();show(cur+1);}});
-  card.addEventListener('click',()=>openSheet(card.dataset.id));
-  card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openSheet(card.dataset.id);}});
-});
-/* sheet */
-const sh=$('.sheet');let lastFocus=null;
-function openSheet(id){
-  const c=byId(id);if(!c||!sh)return;lastFocus=d.activeElement;
-  const pics=[...(c.big||[]),...c.img.filter((_,i)=>i!==0&&i!==2)];
-  $('.sheet__track',sh).innerHTML=pics.map((u,i)=>`<img src="${u}" alt="${c.brand} ${c.model} — фото ${i+1}" ${i?'loading="lazy"':''}>`).join('');
-  $('.sheet__dots',sh).innerHTML=pics.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('');
-  $('h3 small',sh).textContent=c.brand;$('h3 .t',sh).textContent=c.model+(c.trim?' · '+c.trim:'');
-  $('.sheet__price',sh).textContent=eur(c.price);
-  const sp=[['Год',c.year],['Пробег',c.km.toLocaleString('ru-RU')+' км'],['Мощность',c.cv+' л.с.'],['Топливо',c.fuel],['Кузов',c.body],['Цвет',c.color]];
-  $('.specs',sh).innerHTML=sp.map(([k,v])=>`<div><span>${k}</span><b>${v}</b></div>`).join('');
-  $('.js-wa',sh).href='https://wa.me/34699589358?text='+encodeURIComponent(`Здравствуйте! Интересует ${c.brand} ${c.model} ${c.year}, ${eur(c.price)}. Он ещё в наличии?`);
-  $('.js-src',sh).href=c.url;
-  sh.classList.add('open');sh.setAttribute('aria-hidden','false');d.body.style.overflow='hidden';lenis&&lenis.stop();
-  $('.sheet__track',sh).scrollLeft=0;setTimeout(()=>$('.sheet__x',sh).focus(),50);
-  if(G&&!RM)G.from($$('.specs div, .sheet__i h3, .sheet__price',sh),{y:24,opacity:0,stagger:.04,duration:.7,ease:'power3.out',delay:.25});
-}
-function closeSheet(){if(!sh)return;sh.classList.remove('open');sh.setAttribute('aria-hidden','true');d.body.style.overflow='';lenis&&lenis.start();lastFocus&&lastFocus.focus&&lastFocus.focus();}
-if(sh){
-  $('.sheet__x',sh).addEventListener('click',closeSheet);$('.sheet__bg',sh).addEventListener('click',closeSheet);
-  d.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
-  const tr=$('.sheet__track',sh);
-  tr.addEventListener('scroll',()=>{const i=Math.round(tr.scrollLeft/tr.clientWidth);$$('.sheet__dots i',sh).forEach((x,k)=>x.classList.toggle('on',k===i));},{passive:true});
-  $$('.sheet__nav button',sh).forEach(b=>b.addEventListener('click',()=>tr.scrollBy({left:tr.clientWidth*+b.dataset.d,behavior:'smooth'})));
-}
-/* catalog filter/sort */
-const grid=$('[data-grid]');
-if(grid){
-  const cards=$$('.car',grid),cnt=$('.js-cnt');let f='*';
-  const relayout=()=>{const vis=cards.filter(c=>!c.classList.contains('hide'));cards.forEach(c=>c.classList.remove('xl'));vis.forEach((c,i)=>{if(vis.length>3&&(i===0||i===7))c.classList.add('xl');});
-    cnt&&(cnt.textContent=vis.length+' авто');
-    if(G&&!RM)G.fromTo(vis,{y:40,opacity:0},{y:0,opacity:1,duration:.7,stagger:.05,ease:'power3.out',clearProps:'transform,opacity'});
-    window.ScrollTrigger&&ScrollTrigger.refresh();};
-  $$('.chip').forEach(ch=>ch.addEventListener('click',()=>{$$('.chip').forEach(x=>x.classList.toggle('on',x===ch));f=ch.dataset.f;cards.forEach(c=>c.classList.toggle('hide',f!=='*'&&c.dataset.brand!==f));relayout();}));
-  const orig=cards.slice();
-  $('.sort').addEventListener('change',e=>{const v=e.target.value;let a=orig.slice();
-    if(v==='pd')a.sort((x,y)=>y.dataset.price-x.dataset.price);if(v==='pa')a.sort((x,y)=>x.dataset.price-y.dataset.price);if(v==='y')a.sort((x,y)=>y.dataset.year-x.dataset.year);if(v==='cv')a.sort((x,y)=>y.dataset.cv-x.dataset.cv);
-    a.forEach(c=>grid.appendChild(c));relayout();});
-}
-/* accordion */
-$$('[data-acc] .acc__i').forEach(it=>{const h=$('.acc__h',it),b=$('.acc__b',it);
-  const set=o=>{it.classList.toggle('open',o);h.setAttribute('aria-expanded',o);if(G&&!RM){G.to(b,{height:o?'auto':0,duration:.6,ease:'expo.inOut',onComplete:()=>window.ScrollTrigger&&ScrollTrigger.refresh()});if(o)G.from($$('li',b),{x:-20,opacity:0,stagger:.03,duration:.5,delay:.15,ease:'power3.out'});}else b.style.height=o?'auto':'0';};
-  h.addEventListener('click',()=>set(!it.classList.contains('open')));it._set=set;});
-const hs=location.hash&&$(location.hash);if(hs&&hs._set){hs._set(true);}
-else{const f0=$('[data-acc] .acc__i');f0&&f0._set&&f0._set(true);}
-/* booking */
-const form=$('[data-form]');
-if(form){
-  const box=$('.js-slots',form),days=['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];let t=new Date(),out=[];
-  for(let i=1;out.length<6&&i<14;i++){const dt=new Date(t.getTime()+i*864e5);if(dt.getDay()===0)continue;const lbl=(i===1?'Завтра':days[dt.getDay()]+' '+dt.getDate());const times=dt.getDay()===6?['10:30','12:00']:['9:30','15:00'];times.forEach(tm=>out.length<6&&out.push(lbl+', '+tm));}
-  box.innerHTML=out.map((s,i)=>`<button type="button" class="slot${i?'':' on'}">${s}</button>`).join('');
-  $$('.slot',box).forEach(s=>s.addEventListener('click',()=>$$('.slot',box).forEach(x=>x.classList.toggle('on',x===s))));
-  form.addEventListener('submit',e=>{e.preventDefault();const P=form.plate,N=form.name,T=form.tel;let ok=true;
-    [[P,P.value.replace(/\s/g,'').length>=4],[N,N.value.trim().length>=2],[T,T.value.replace(/\D/g,'').length>=9]].forEach(([el,v])=>{el.closest('.fl').classList.toggle('err',!v);if(!v)ok=false;});
-    if(!ok)return;const no='R2-'+String(Date.now()).slice(-4);$('.js-ticket',form).textContent='№ '+no;
-    $('.form__ok',form).textContent=`${N.value.trim()}, заявка ${no} принята: ${form.svc.value}, ${$('.slot.on',box).textContent}. Менеджер подтвердит в WhatsApp.`;form.classList.add('done');});
-}
+/* v3: card, catalog, sheet, booking moved to r3.js */
 }
