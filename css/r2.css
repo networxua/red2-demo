@@ -2,7 +2,7 @@
 :root{
   --bone:#ece6dc; --bone-2:#e2dacb; --sand:#cfc3ae;
   --tar:#15120f; --tar-2:#211c17; --smoke:#8a8075;
-  --red:#c1272d; --red-hot:#e3262e; --amber:#f2a900; --go:#2fd36b;
+  --red:#c1272d; --red-hot:#e3262e; --amber:#c1272d; --go:#ff2a33; /* telemetry: brand red only */
   --serif:"Cormorant",Georgia,serif; --wide:"Unbounded",system-ui,sans-serif; --sans:"Onest",system-ui,sans-serif;
   --pad:clamp(18px,4.2vw,64px); --rule:1px solid rgba(21,18,15,.16);
   --ease:cubic-bezier(.22,.8,.18,1);
@@ -85,8 +85,8 @@ button{cursor:pointer;background:none;border:0}
 .intro__tree{display:flex;flex-direction:column;align-items:center;gap:16px}
 .intro__row{display:flex;gap:16px}
 .bulb{width:22px;height:22px;border-radius:50%;background:#2a241e;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);transition:background .12s,box-shadow .12s}
-.bulb.on{background:var(--amber);box-shadow:0 0 22px 4px rgba(242,169,0,.55)}
-.bulb.go{background:var(--go);box-shadow:0 0 26px 6px rgba(47,211,107,.55)}
+.bulb.on{background:var(--amber);box-shadow:0 0 22px 4px rgba(193,39,45,.55)}
+.bulb.go{background:var(--go);box-shadow:0 0 28px 7px rgba(255,42,51,.65)}
 .intro__cap{margin-top:30px;font:600 10px/1 var(--wide);letter-spacing:.3em;opacity:.6}
 .intro__rt{font:600 12px/1 var(--wide);letter-spacing:.12em;margin-top:12px;color:var(--amber);font-variant-numeric:tabular-nums}
 html.no-intro .intro{display:none}
@@ -188,7 +188,9 @@ html.no-intro .intro{display:none}
 .slip{background:#f6f2ea;color:var(--tar);max-width:420px;padding:22px 22px 26px;font:500 12px/1.2 var(--wide);letter-spacing:.06em;text-transform:uppercase;box-shadow:0 30px 60px rgba(0,0,0,.4);transform:rotate(-1.4deg);clip-path:inset(0 0 0 0)}
 .slip__h{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(21,18,15,.35);padding-bottom:12px;margin-bottom:10px;font-size:11px}
 .slip__r{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dotted rgba(21,18,15,.2)}
-.slip__r b{font-weight:700}
+.slip__r b{font-weight:700;color:var(--red)}
+.slip{border-top:4px solid var(--red)}
+.slip__h{color:var(--red)}
 .slip__f{margin-top:14px;font:italic 500 20px/1.1 var(--serif);text-transform:none;letter-spacing:0}
 
 /* trust */

@@ -168,7 +168,7 @@ if(form){
     if(!ok)return;const no='R2-'+String(Date.now()).slice(-4);$('.js-ticket',form).textContent='№ '+no;
     const when=$('.day.on',days).dataset.l+', '+$('.slot.on',box).textContent;
     const txt=`Здравствуйте! Заявка ${no}: ${form.svc.value}, ${when}.${form.plate.value?' Авто '+form.plate.value.toUpperCase()+'.':''}${form.cm.value?' '+form.cm.value:''} — ${N.value.trim()}, ${T.value}`;
-    const ok2=$('.form__ok',form);ok2.innerHTML=`<b>${N.value.trim()}, заявка ${no} принята.</b><br>${form.svc.value} · ${when}. Менеджер подтвердит в WhatsApp.<a class="btn btn--wa btn--red" href="${WA}?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">Продублировать в WhatsApp<b>↗</b></a>`;form.classList.add('done');
+    const ok2=$('.form__ok',form);ok2.innerHTML=`<b>${N.value.trim()}, заявка ${no} принята.</b><br>${form.svc.value} · ${when}. Менеджер подтвердит в WhatsApp.<a class="btn btn--wa btn--red" href="${WA}?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">Продублировать в WhatsApp<b><svg class="ic-ar" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M3 9L9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></b></a>`;form.classList.add('done');
     if(G&&!RM)G.from(ok2,{y:20,opacity:0,duration:.6,ease:'power3.out'});});
 }
 
