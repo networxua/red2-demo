@@ -360,3 +360,4 @@ html.bt-on .bt-l{opacity:0}
 .form{grid-template-columns:minmax(0,1fr)}.form>*,.fl2>*{min-width:0}
 .form.done .form__ok{display:block}.form__ok .btn{display:flex;width:100%;margin-top:14px}
 .ic-ar{display:inline-block;width:.8em;height:.8em;vertical-align:-.05em;flex:0 0 auto}
+.btn b .ic-ar{width:14px;height:14px;color:#fff}
