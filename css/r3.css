@@ -246,8 +246,8 @@ section:has(>.gstrip){overflow:hidden}
 .bt-l__tree i{width:7px;height:7px;border-radius:50%;background:#3a322a;animation:bl 3.2s infinite}
 .bt-l__tree i:nth-child(1){animation-delay:0s}.bt-l__tree i:nth-child(2){animation-delay:.25s}.bt-l__tree i:nth-child(3){animation-delay:.5s}
 .bt-l__tree i.g{animation-name:bg;animation-delay:.75s}
-@keyframes bl{0%,8%{background:#3a322a}10%,30%{background:var(--amber);box-shadow:0 0 8px var(--amber)}32%,100%{background:#3a322a}}
-@keyframes bg{0%,8%{background:#3a322a}10%,40%{background:var(--go);box-shadow:0 0 9px var(--go)}42%,100%{background:#3a322a}}
+@keyframes bl{0%,8%{background:#3a322a}10%,30%{background:var(--tl-on);box-shadow:0 0 8px var(--tl-on)}32%,100%{background:#3a322a}}
+@keyframes bg{0%,8%{background:#3a322a}10%,40%{background:var(--tl-go);box-shadow:0 0 9px var(--tl-go)}42%,100%{background:#3a322a}}
 .bt-l.nudge{animation:ndg 1.2s var(--ease) 2}
 @keyframes ndg{0%,100%{transform:none}40%{transform:translateY(-8px)}}
 .bt-l::after{content:"";position:absolute;top:8px;right:10px;width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px var(--tar)}
@@ -361,3 +361,11 @@ html.bt-on .bt-l{opacity:0}
 .form.done .form__ok{display:block}.form__ok .btn{display:flex;width:100%;margin-top:14px}
 .ic-ar{display:inline-block;width:.8em;height:.8em;vertical-align:-.05em;flex:0 0 auto}
 .btn b .ic-ar{width:14px;height:14px;color:#fff}
+
+/* v7: full-bleed single-video heroes */
+.reel__p::after{background:linear-gradient(180deg,rgba(21,18,15,.6) 0%,rgba(21,18,15,.05) 28%,rgba(21,18,15,.2) 55%,rgba(21,18,15,.9) 100%)}
+.ph{grid-template-columns:1fr}
+.ph__v{position:absolute;inset:0;z-index:0}
+.ph__v::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,18,15,.92) 0%,rgba(21,18,15,.7) 38%,rgba(21,18,15,.15) 75%,rgba(21,18,15,.05) 100%),linear-gradient(180deg,rgba(21,18,15,.55) 0%,rgba(21,18,15,0) 25%)}
+.ph__b{z-index:2;max-width:min(1100px,100%)}
+@media (max-width:900px){.ph__v::after{background:linear-gradient(180deg,rgba(21,18,15,.5) 0%,rgba(21,18,15,.4) 22%,rgba(21,18,15,.82) 45%,rgba(21,18,15,.95) 100%)}}

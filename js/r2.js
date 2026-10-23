@@ -72,15 +72,13 @@ function heroScroll(){
     const tl=G.timeline({scrollTrigger:{trigger:hero,start:'top top',end:'+=70%',scrub:.6,pin:true,anticipatePin:1,refreshPriority:3}});
     if(MOB()){
       const p=$('.reel__p');
-      tl.to(p,{clipPath:'inset(9% 6% 26% 6% round 18px)',ease:'none'},0)
-        .to($('video',p),{scale:1.2,ease:'none'},0)
+      tl.to($('video',p),{scale:1.15,ease:'none'},0)
         .to('[data-hero-title]',{yPercent:-40,ease:'none'},0)
         .to('[data-hero-side]',{opacity:0,y:-30,ease:'none'},0)
         .to('.tree, .reel__tag',{opacity:0,ease:'none'},0);
     }else{
       const ps=$$('.reel__p');
-      tl.to(ps[0],{yPercent:-10,ease:'none'},0).to(ps[1],{yPercent:8,ease:'none'},0).to(ps[2],{yPercent:-18,ease:'none'},0)
-        .to('.reel',{gap:18,paddingInline:18,ease:'none'},0)
+      tl.to($('video',ps[0]),{scale:1.12,ease:'none'},0)
         .to('[data-hero-title]',{yPercent:-30,ease:'none'},0)
         .to('[data-hero-side]',{opacity:0,y:-40,ease:'none'},0);
     }
